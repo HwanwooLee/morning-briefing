@@ -1,0 +1,9 @@
+# API 키 등 비밀 정보 (절대 GitHub에 올리지 않기)
+.env
+.env.*
+
+# 파이썬 부산물
+__pycache__/
+*.pyc
+.venv/
+venv/
