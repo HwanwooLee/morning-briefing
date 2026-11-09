@@ -1,7 +1,7 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-09T19:05:18.401184+09:00",
+  "updated_at": "2026-11-09T20:27:14.500177+09:00",
   "keywords": {
     "돈의 흐름": [
       "Fed",
@@ -40,39 +40,39 @@
   },
   "items": [
     {
-      "title": "Nvidia stock falls 5% as scrutiny turns to Jensen Huang’s relationship with alleged Chinese spy",
-      "title_ko": "엔비디아 주가, 젠슨 황과 중국 스파이 의혹 인물의 관계에 대한 관심이 커지며 5% 하락",
+      "title": "Nvidia stock falls 4% as scrutiny turns to Jensen Huang’s relationship with alleged Chinese spy",
+      "title_ko": "엔비디아 주가 4% 하락, 젠슨 황과 중국 스파이 의혹 인물의 관계로 시선 집중",
       "summary": [
-        "엔비디아 주가가 5% 하락했으며, 시장의 관심은 젠슨 황과 중국 스파이 의혹 인물의 관계로 쏠리고 있다.",
-        "엔비디아는 황이 \"외국 정보 활동\"의 표적이었다는 보도가 나온 뒤 이사회가 독립적인 조사에 착수했다고 밝혔다.",
-        "기사 정보만으로는 의혹의 구체적인 내용이나 조사 범위를 알 수 없다.",
+        "엔비디아 주가가 4% 하락했으며, 젠슨 황과 중국 스파이로 의심받는 인물의 관계에 대한 면밀한 조사가 이어지고 있다.",
+        "황이 \"외국 정보기관의 공작\" 대상이었다는 보도가 나왔다.",
+        "엔비디아는 이 보도에 따라 이사회가 독립적인 조사에 착수했다고 밝혔다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
       "link": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
-      "published": "2026-11-09T09:37:44+00:00",
+      "published": "2026-11-09T11:10:11+00:00",
       "group": "AI 인프라"
     },
     {
-      "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
-      "title_ko": "중국 도매물가 상승률 4년여 만에 최고, 소비자물가 상승세는 둔화",
+      "title": "Rubio sees little hope of diplomatic breakthrough to Mideast deadlock amid 'outrageous' Iranian demands",
+      "title_ko": "루비오, '터무니없는' 이란의 요구 속에 중동 교착 상태의 외교적 돌파구 가능성을 낮게 봐",
       "summary": [
-        "10월 중국 생산자물가지수(PPI)는 5.7%를 기록했다.",
-        "이는 로이터가 조사한 경제학자 전망치 5.3%를 웃도는 수치다.",
-        "제목에 따르면 도매물가 상승률은 4년여 만에 가장 높았고, 소비자물가 지표는 둔화됐다.",
+        "마르코 루비오 미국 국무장관이 기자들에게 이란과의 협상이 여전히 성과가 없다고 말했다.",
+        "제목에 따르면 루비오 장관은 이란의 요구를 '터무니없다'고 표현했다.",
+        "제목에 따르면 루비오 장관은 중동 교착 상태를 풀 외교적 돌파구가 마련될 가능성을 낮게 보고 있다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
-      "published": "2026-11-09T02:50:22+00:00",
+      "link": "https://www.cnbc.com/2026/11/09/us-iran-war-trump-hormuz.html",
+      "published": "2026-11-09T11:09:14+00:00",
       "group": "지정학"
     },
     {
       "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
       "title_ko": "미국 중간선거에서 민주당이 압승했지만 이란 전쟁 확대 위험은 여전히 높다",
       "summary": [
-        "미국 중간선거에서 민주당이 압승을 거두었다고 기사는 전한다.",
-        "그럼에도 이란과의 전쟁이 확대될 위험은 여전히 높다고 제목에서 밝히고 있다.",
+        "미국 중간선거에서 민주당이 압승을 거두었다고 전해진다.",
+        "그럼에도 이란과 관련한 전쟁이 확대될 위험은 여전히 높다는 것이 기사의 제목이 전하는 내용이다.",
         "중동에서 긴장이 끓어오르는 가운데 미국과 이란이 충돌 국면으로 향하고 있다고 소개문은 설명한다.",
         "자세한 내용은 원문 확인 필요"
       ],
@@ -83,10 +83,10 @@
     },
     {
       "title": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
-      "title_ko": "10년물 美 국채금리 하락, 트레이더들 민주당 중간선거 승리와 유가 하락 주시",
+      "title_ko": "10년물 국채 금리 하락, 트레이더들은 민주당의 중간선거 승리와 유가 하락을 주시",
       "summary": [
-        "수요일 국채 수익률은 투자자들이 미국 중간선거에서 민주당이 거둔 큰 승리를 가늠하는 가운데 거의 변동이 없었다.",
-        "제목에 따르면 10년물 국채금리는 하락세를 보였고 유가도 떨어졌다.",
+        "수요일 국채 금리는 큰 변동 없이 거래되었으며, 투자자들은 미국 중간선거에서 나온 민주당의 큰 승리를 가늠하고 있다.",
+        "제목에 따르면 10년물 국채 금리는 하락했고 유가도 떨어졌다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
@@ -98,8 +98,8 @@
       "title": "Binance’s $6.3 billion hack raises questions about crypto wallet safety",
       "title_ko": "바이낸스의 63억 달러 해킹, 암호화폐 지갑 안전성에 의문 제기",
       "summary": [
-        "이번 주 두 건의 주요 보안 사고가 발생했으며, 그중에는 역대 최대 규모의 암호화폐 도난 사건이 포함되어 있다.",
-        "이 사고들로 인해 암호화폐 보관(커스터디)과 안전성에 대한 우려가 커지고 있다.",
+        "이번 주 두 건의 주요 보안 사고가 발생했으며, 그중에는 역대 최대 규모의 암호화폐 도난 사건이 포함되어 있습니다.",
+        "이 사고들로 인해 암호화폐 보관(커스터디)과 안전성에 대한 우려가 커지고 있습니다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
