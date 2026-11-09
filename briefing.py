@@ -7,7 +7,8 @@
 - 한 번 실행할 때 RSS마다 한 번씩만 요청한다.
 - 기사 하나당 Claude API를 한 번만 호출한다 (번역 + 요약을 한 번에).
 - API 호출이 실패한 기사는 영어 제목·소개문·링크만 보여주고, 나머지는 계속 진행한다.
-- API 키는 .env 파일의 ANTHROPIC_API_KEY에서 읽고, 화면이나 로그에 출력하지 않는다.
+- API 키는 환경변수 ANTHROPIC_API_KEY에서 읽는다. 내 PC에서는 .env 파일에 넣어 두면 되고,
+  .env가 없으면(GitHub Actions 등) 이미 설정된 환경변수를 그대로 쓴다. 키 값은 출력하지 않는다.
 
 실행:
     python briefing.py             # AI 번역·요약
@@ -172,9 +173,11 @@ def make_client():
     import anthropic
     from dotenv import load_dotenv
 
+    # .env가 있으면 읽고, 없으면 조용히 넘어간다. 이미 있는 환경변수는 덮어쓰지 않는다.
     load_dotenv(ENV_FILE)
     if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("[경고] .env에 ANTHROPIC_API_KEY가 없습니다. 모든 기사를 영어 원문으로 보여줍니다.")
+        print("[경고] ANTHROPIC_API_KEY가 없습니다 (.env 또는 환경변수 확인). "
+              "모든 기사를 영어 원문으로 보여줍니다.")
         return None
     return anthropic.Anthropic(timeout=60.0)  # 키는 환경변수에서 SDK가 직접 읽는다
 
@@ -219,7 +222,7 @@ def summarize(client, title, description):
             messages=[{"role": "user", "content": prompt}],
         )
     except anthropic.AuthenticationError:
-        print("  [API 실패] API 키가 올바르지 않습니다 (.env 확인)")
+        print("  [API 실패] API 키가 올바르지 않습니다 (.env 또는 GitHub Secrets 확인)")
         return None
     except anthropic.RateLimitError:
         print("  [API 실패] 요청 한도 초과")

@@ -1,0 +1,47 @@
+name: 아침 브리핑
+
+on:
+  schedule:
+    - cron: "0 23 * * *"   # 매일 UTC 23:00 = 한국 시간 다음 날 아침 8시
+  workflow_dispatch:        # Actions 탭에서 수동 실행
+
+permissions:
+  contents: write           # index.html, news.json을 commit/push 하기 위해 필요
+
+concurrency:
+  group: briefing           # 동시에 두 번 돌지 않게
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 가져오기
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 패키지 설치
+        run: pip install anthropic python-dotenv
+
+      - name: 브리핑 만들기
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONIOENCODING: utf-8
+        run: python briefing.py
+
+      - name: 바뀐 파일이 있으면 commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html news.json
+          if git diff --cached --quiet; then
+            echo "바뀐 내용이 없어 commit하지 않습니다."
+            exit 0
+          fi
+          git commit -m "아침 브리핑 자동 업데이트 ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M') KST)"
+          git pull --rebase origin main
+          git push origin HEAD:main
