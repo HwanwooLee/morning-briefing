@@ -2,7 +2,7 @@ name: 아침 브리핑
 
 on:
   schedule:
-    - cron: "0 23 * * *"   # 매일 UTC 23:00 = 한국 시간 다음 날 아침 8시
+    - cron: "0 23 * * 0-4" # UTC 일~목 23:00 = 한국 시간 월~금 아침 8시
   workflow_dispatch:        # Actions 탭에서 수동 실행
 
 permissions:
@@ -30,6 +30,9 @@ jobs:
       - name: 브리핑 만들기
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
           PYTHONIOENCODING: utf-8
         run: python briefing.py
 
@@ -37,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html news.json
+          git add index.html news.json dashboard.html news_history.json last_run.json
           if git diff --cached --quiet; then
             echo "바뀐 내용이 없어 commit하지 않습니다."
             exit 0
