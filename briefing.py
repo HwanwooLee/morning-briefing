@@ -5,7 +5,9 @@
 
 - RSS에 있는 제목과 소개문만 쓰고, 기사 본문은 가져오지 않는다.
 - 한 번 실행할 때 RSS마다 한 번씩만 요청한다. RSS 하나가 안 열려도 나머지는 계속 진행한다.
-- 지난번 실행 이후의 기사만 고른다 (last_run.json. 기록이 없으면 48시간, 최대 96시간).
+- 기사 기간은 달력으로 정한다 (화~금: 전날 08:00 이후, 월·주말: 금요일 08:00 이후, 한국 시간).
+- 페이지는 비지 않는다: 기간 안 기사가 7개보다 적으면 기록(news_history.json)의
+  가장 최근 기사로 채우고 "이전 기사"로 표시한다. 이미 요약한 기사는 요약을 다시 쓴다.
 - 맨 위에 나스닥·S&P 500(FRED), 코스피(한국은행 ECOS) 지수 카드를 보여준다.
 - 분류된 기사는 news_history.json에 쌓고(API 안 씀), dashboard.html로 건수를 보여준다.
 - 고른 기사에만 Claude API를 기사당 한 번 호출한다 (영어 기사: 번역+요약, 한국어 기사: 요약만).
@@ -27,6 +29,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from datetime import time as dt_time
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -41,13 +44,10 @@ NEWS_JSON = BASE_DIR / "news.json"
 INDEX_HTML = BASE_DIR / "index.html"
 DASHBOARD_HTML = BASE_DIR / "dashboard.html"
 HISTORY_JSON = BASE_DIR / "news_history.json"
-LAST_RUN_JSON = BASE_DIR / "last_run.json"
 ENV_FILE = BASE_DIR / ".env"
 
 KST = timezone(timedelta(hours=9))
 TOTAL_ITEMS = 7
-DEFAULT_WINDOW = timedelta(hours=48)  # 마지막 실행 기록이 없을 때
-MAX_WINDOW = timedelta(hours=96)      # 아무리 오래 쉬었어도 이 이상은 거슬러 가지 않음
 
 # 지수 카드: (화면 이름, 데이터 출처, 시리즈/통계 코드, 시장)
 # '업데이트 지연'은 같은 시장의 다른 지수와 기준일을 비교한다 (한국·미국은 휴장일이 달라서).
@@ -288,24 +288,16 @@ def collect_articles():
 
 
 def window_start(now):
-    """기사를 고를 시작 시각 = 지난번 실행 시각. 기록이 없으면 48시간 전, 최대 96시간 전까지만."""
-    try:
-        last = datetime.fromisoformat(
-            json.loads(LAST_RUN_JSON.read_text(encoding="utf-8"))["last_run"])
-        if last.tzinfo is None:
-            last = last.replace(tzinfo=timezone.utc)
-    except (FileNotFoundError, KeyError, TypeError, ValueError):
-        return now - DEFAULT_WINDOW, "실행 기록 없음 → 최근 48시간"
-    if last >= now:
-        return now - DEFAULT_WINDOW, "실행 기록이 이상함 → 최근 48시간"
-    if now - last > MAX_WINDOW:
-        return now - MAX_WINDOW, "지난 실행이 96시간보다 오래됨 → 최근 96시간"
-    return last, f"지난번 실행({format_kst(last.isoformat())} KST) 이후"
-
-
-def save_last_run(now):
-    LAST_RUN_JSON.write_text(json.dumps({"last_run": now.isoformat()}, indent=2) + "\n",
-                             encoding="utf-8")
+    """기사 기간의 시작 시각. 실행 시각과 상관없이 달력(한국 시간)으로 정한다.
+    같은 날 몇 번을 실행해도 같은 기간이 된다.
+      화~금: 전날 08:00 이후
+      월: 금요일 08:00 이후 (주말 포함)
+      토·일(수동 실행): 금요일 08:00 이후
+    """
+    today = now.astimezone(KST).date()
+    days_back = {0: 3, 5: 1, 6: 2}.get(today.weekday(), 1)  # 월=0 … 일=6
+    start = datetime.combine(today - timedelta(days=days_back), dt_time(8, 0), tzinfo=KST)
+    return start, f"{start:%Y-%m-%d %H:%M} 이후"
 
 
 def is_recent(article, start, now):
@@ -339,6 +331,57 @@ def select_articles(candidates, total=TOTAL_ITEMS):
 
     chosen.sort(key=lambda a: a["published"], reverse=True)
     return chosen
+
+
+def load_previous_items():
+    """지난번 news.json의 기사들을 link별로. (이미 만든 요약을 다시 쓰기 위해)"""
+    try:
+        items = json.loads(NEWS_JSON.read_text(encoding="utf-8")).get("items", [])
+    except (FileNotFoundError, ValueError):
+        return {}
+    return {normalize_link(it["link"]): it for it in items}
+
+
+def fill_from_history(chosen, history, articles, previous, total=TOTAL_ITEMS):
+    """기간 안 기사가 total개보다 적으면 기록에서 가장 최근 기사로 채운다 ("이전 기사").
+
+    기록에는 소개문이 없으므로, 소개문·시각은 이번에 받은 RSS에서 찾고(아직 RSS에 있으면),
+    없으면 지난번 news.json에서 찾는다.
+    """
+    need = total - len(chosen)
+    if need <= 0:
+        return chosen
+    used = {normalize_link(a["link"]) for a in chosen}
+    in_rss = {normalize_link(a["link"]): a for a in articles}
+
+    # 최신순: 기사 날짜 → 같은 날이면 기록에 나중에 들어간 것 먼저
+    ordered = sorted(enumerate(history), key=lambda t: (t[1]["date"], t[0]), reverse=True)
+    extra = []
+    for _, h in ordered:
+        if len(extra) >= need:
+            break
+        key = normalize_link(h["link"])
+        if key in used:
+            continue
+        used.add(key)
+        rss, prev = in_rss.get(key), previous.get(key)
+        published = rss["published"] if rss else None
+        if published is None and prev and prev.get("published"):
+            published = datetime.fromisoformat(prev["published"])
+        label = (f"{ECON} · {h['region']} {h['indicator']}" if h["category"] == ECON
+                 else h["category"])
+        extra.append({
+            "title": h["title"],
+            "link": h["link"],
+            "description": rss["description"] if rss else "",
+            "published": published,
+            "date": h["date"],
+            "source": h["section"],
+            "cls": {"category": h["category"], "region": h["region"],
+                    "indicator": h["indicator"], "label": label},
+            "older": True,
+        })
+    return chosen + extra
 
 
 def print_stats(candidates, window_text):
@@ -585,14 +628,27 @@ def summarize(client, title, description):
 
 # ---------------------------------------------------------------- 저장 / 출력
 
-def build_items(articles):
-    client = None if PRACTICE_MODE else make_client()
+def build_items(articles, previous):
+    """고른 기사를 카드용 데이터로. 지난번 news.json에 AI 요약이 있으면 그대로 다시 쓰고
+    API를 부르지 않는다. 소개문이 없는 기사(기록에서만 찾은 기사)도 API를 부르지 않는다.
+    (연습 모드는 'AI 요약 아님' 표시와 맞도록 저장된 요약도 쓰지 않는다.)"""
+    client = None
     items = []
     for a in articles:
-        result = summarize(client, a["title"], a["description"])
+        cached = previous.get(normalize_link(a["link"]))
+        if not PRACTICE_MODE and cached and cached.get("ai_summary"):
+            result = (cached.get("title_ko"), cached["summary"])
+            print(f"  [요약 재사용] {result[0] or a['title']}")
+        elif PRACTICE_MODE or not a["description"]:
+            result = None
+        else:
+            if client is None:
+                client = make_client() or False  # False = 키 없음 (다시 만들지 않기)
+            result = summarize(client or None, a["title"], a["description"])
+            if result:
+                print(f"  [요약 완료] {result[0] or a['title']}")
         if result:
             title_ko, summary = result
-            print(f"  [요약 완료] {title_ko or a['title']}")
         else:
             # 연습 모드 또는 실패: 원래 제목·소개문 그대로
             title_ko, summary = None, [a["description"]] if a["description"] else []
@@ -603,6 +659,9 @@ def build_items(articles):
             "ai_summary": result is not None,
             "link": a["link"],
             "published": a["published"].isoformat() if a["published"] else None,
+            "date": a.get("date") or (a["published"].astimezone(KST).date().isoformat()
+                                      if a["published"] else None),
+            "older": a.get("older", False),  # 기간 밖에서 채운 기사
             "source": a["source"],
             "category": a["cls"]["category"],
             "region": a["cls"]["region"],
@@ -634,10 +693,12 @@ def format_kst(iso):
 
 def render_card(it):
     esc = html.escape
+    when = format_kst(it["published"]) if it["published"] else (it.get("date") or "시각 정보 없음")
+    older = '\n        <span class="older">이전 기사</span>' if it.get("older") else ""
     head = f"""
       <div class="meta">
         <span class="tag">{esc(it["label"])}</span>
-        <time>{esc(format_kst(it["published"]))}</time>
+        <time>{esc(when)}</time>{older}
       </div>"""
     link = (f'<a class="link" href="{esc(it["link"], quote=True)}" '
             f'target="_blank" rel="noopener noreferrer">원문 보기</a>')
@@ -692,7 +753,7 @@ def render_html(data):
     esc = html.escape
     cards = [render_card(it) for it in data["items"]]
     if not cards:
-        cards.append('<p class="empty">지난번 실행 이후 키워드에 맞는 기사가 없습니다.</p>')
+        cards.append('<p class="empty">아직 모아 둔 기사가 없습니다.</p>')  # 첫 실행에서 기록도 없을 때만
     index_cards = "".join(render_index_card(c) for c in data.get("indices", []))
 
     if data["mode"] == "practice":
@@ -722,6 +783,8 @@ def render_html(data):
           font-size: .8rem; color: #888; }}
   .tag {{ color: #1d4ed8; font-weight: 700; }}
   .tag::after {{ content: "·"; color: #bbb; margin-left: 8px; font-weight: 400; }}
+  .older {{ font-size: .72rem; color: #666; border: 1px solid #ddd; border-radius: 4px;
+           padding: 0 6px; }}
   .card h2 {{ font-size: 1.2rem; line-height: 1.45; margin: 6px 0 4px; word-break: keep-all; }}
   .orig {{ margin: 0 0 10px; color: #999; font-size: .82rem; line-height: 1.4; }}
   .summary {{ margin: 0 0 10px; padding-left: 1.1em; color: #333; font-size: .95rem; }}
@@ -1129,19 +1192,21 @@ def main():
     else:
         verify_dashboard(stats, end)
 
+    # 기간 안에서 7개 고르고, 모자라면 기록의 최근 기사로 채운다 (페이지가 비지 않게)
+    previous = load_previous_items()
     selected = select_articles(candidates)
-    items = build_items(selected)  # 요약은 고른 기사에만
+    selected = fill_from_history(selected, history, articles, previous)
+    items = build_items(selected, previous)  # 요약은 고른 기사에만, 이미 한 요약은 재사용
     data = save_news(items, now.astimezone(KST), indices, start, window_text)
     INDEX_HTML.write_text(render_html(data), encoding="utf-8")
 
-    # 연습 모드는 실행 기록을 남기지 않는다 (연습을 여러 번 해도 실제 실행 기간이 줄지 않게)
-    if not PRACTICE_MODE:
-        save_last_run(now)
-
     ok = sum(1 for it in items if it["ai_summary"])
-    print(f"완료: {len(items)}개 기사 (AI 요약 {ok}개) -> {NEWS_JSON.name}, {INDEX_HTML.name}")
+    older = sum(1 for it in items if it["older"])
+    print(f"완료: {len(items)}개 기사 (기간 안 {len(items) - older}개 + 이전 기사 {older}개, "
+          f"AI 요약 {ok}개) -> {NEWS_JSON.name}, {INDEX_HTML.name}")
     for it in items:
-        print(f"  [{it['label']}] {it['title_ko'] or it['title']}")
+        mark = " (이전 기사)" if it["older"] else ""
+        print(f"  [{it['label']}]{mark} {it['title_ko'] or it['title']}")
 
 
 if __name__ == "__main__":
