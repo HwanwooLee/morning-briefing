@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-11T11:27:28.633353+09:00",
+  "updated_at": "2026-11-12T12:32:23.562151+09:00",
   "window": {
-    "from": "2026-11-10T08:00:00+09:00",
-    "description": "2026-11-10 08:00 이후"
+    "from": "2026-11-11T08:00:00+09:00",
+    "description": "2026-11-11 08:00 이후"
   },
   "indices": [
     {
@@ -12,10 +12,10 @@
       "source": "FRED",
       "code": "NASDAQCOM",
       "market": "US",
-      "date": "2026-11-09",
-      "close": 25253.14,
-      "prev_close": 24579.42,
-      "change_pct": 2.74,
+      "date": "2026-11-10",
+      "close": 25065.87,
+      "prev_close": 25253.14,
+      "change_pct": -0.74,
       "delayed": true
     },
     {
@@ -23,10 +23,10 @@
       "source": "FMP",
       "code": "^GSPC",
       "market": "US",
-      "date": "2026-11-10",
-      "close": 7520.93,
-      "prev_close": 7549.94,
-      "change_pct": -0.38,
+      "date": "2026-11-11",
+      "close": 7619.38,
+      "prev_close": 7520.93,
+      "change_pct": 1.31,
       "delayed": false
     },
     {
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-10",
-      "close": 5239.13,
-      "prev_close": 5018.85,
-      "change_pct": 4.39,
+      "date": "2026-11-11",
+      "close": 5375.36,
+      "prev_close": 5239.13,
+      "change_pct": 2.6,
       "delayed": false
     }
   ],
@@ -153,18 +153,78 @@
   },
   "items": [
     {
-      "title": "Anthropic opens Australian retail IPO offering as AI scrutiny intensifies",
-      "title_ko": "Anthropic, AI 감시 강화 속에 호주 개인투자자 대상 IPO 공모 개시",
+      "title": "Elon Musk says it would be an 'honor' to hire Nvidia's Jensen Huang",
+      "title_ko": "일론 머스크, 엔비디아 젠슨 황을 영입하는 것은 \"영광\"이라고 밝혀",
       "summary": [
-        "Anthropic이 수요일에 호주 개인투자자 대상 IPO 공모를 시작했다.",
-        "이에 따라 개인 투자자들은 예정된 IPO에 앞서 주식을 청약할 수 있게 됐다.",
-        "제목은 이번 공모가 AI에 대한 관심과 감시가 커지는 가운데 진행된다고 전한다.",
+        "일론 머스크가 엑스(X)에 올린 글에서 젠슨 황을 고용하는 것이 \"영광\"일 것이라고 말했다.",
+        "이 게시글은 엔비디아 이사회가 황을 축출하려 준비 중이라는 보도가 나오는 가운데 올라왔다.",
+        "해당 보도의 대상은 엔비디아의 젠슨 황이다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html",
-      "published": "2026-11-11T01:52:56+00:00",
-      "date": "2026-11-11",
+      "link": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
+      "published": "2026-11-12T03:25:05+00:00",
+      "date": "2026-11-12",
+      "older": false,
+      "source": "지정학",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "What we know so far about Nvidia partner Megaspeed’s Asia footprint",
+      "title_ko": "엔비디아 파트너 메가스피드의 아시아 사업 현황, 지금까지 알려진 내용",
+      "summary": [
+        "메가스피드는 제한 대상인 엔비디아 칩 수십억 달러어치를 중국에 보낸 데 관여했다는 의혹으로 미국 당국의 조사 중심에 놓여 있다.",
+        "이 회사의 한 임원이 젠슨 황과 불륜 관계였다는 주장도 함께 제기되고 있다.",
+        "기사는 메가스피드의 아시아 사업 규모와 관련해 현재까지 파악된 내용을 다루고 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html",
+      "published": "2026-11-12T03:02:03+00:00",
+      "date": "2026-11-12",
+      "older": false,
+      "source": "지정학",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
+      "title_ko": "크레이머, 젠슨 황 CEO 해임설 보도 속 엔비디아 주식에 대한 입장",
+      "summary": [
+        "짐 크레이머는 수요일 밤 엔비디아 이사회가 젠슨 황을 해임하려 준비 중이라는 취지의 뉴스 보도에 안타까움을 표했다.",
+        "해당 보도는 엔비디아 이사회가 황 CEO를 해임할 준비를 하고 있다고 전했다.",
+        "이 기사는 이러한 보도를 두고 나온 크레이머의 엔비디아 주식에 대한 입장을 다룬다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramer-jensen-huang-nvidia-stock-advice.html",
+      "published": "2026-11-12T01:14:21+00:00",
+      "date": "2026-11-12",
+      "older": false,
+      "source": "지정학",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Nvidia prepares to oust Jensen Huang, WSJ reports — stock sinks",
+      "title_ko": "엔비디아, 젠슨 황 축출 준비 중이라고 WSJ 보도…주가 하락",
+      "summary": [
+        "월스트리트저널(WSJ)은 엔비디아가 젠슨 황을 축출할 준비를 하고 있다고 보도했다.",
+        "이 보도는 황이 한 여성과의 불륜을 인정한 지 며칠 만에 나왔다.",
+        "해당 여성은 미국 정보당국이 중국 스파이로 의심하는 인물이라고 소개문은 전한다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+      "published": "2026-11-12T00:21:27+00:00",
+      "date": "2026-11-12",
       "older": false,
       "source": "AI·빅테크",
       "category": "AI 인프라",
@@ -173,38 +233,38 @@
       "label": "AI 인프라"
     },
     {
-      "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-      "title_ko": "10월 소비자물가 0.4% 상승, 예상 웃돌아 연준의 인플레이션 대응 복잡해져",
+      "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+      "title_ko": "캐나다 대사, 트럼프 관세가 비용을 끌어올리고 미국 내 투자를 위협한다고 경고",
       "summary": [
-        "10월 소비자물가가 전월 대비 0.4% 올라 예상보다 높은 상승률을 보였다.",
-        "이번 보고서는 연방준비제도(연준)가 금리와 관련한 다음 행보를 고민하는 중요한 시점에 나왔다.",
-        "이번 물가 상승으로 연준의 인플레이션 대응이 한층 복잡해졌다.",
+        "캐나다 대사는 트럼프 대통령의 관세가 비용을 끌어올리고 있다고 경고했다.",
+        "이 관세는 미국 내 투자를 위협하는 요인으로 지목됐다.",
+        "미국과 캐나다 간 무역 갈등이 계속되면서 양국 간 협상도 더 복잡해지고 있다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-      "published": "2026-11-10T23:53:58+00:00",
-      "date": "2026-11-11",
+      "link": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+      "published": "2026-11-11T22:30:57+00:00",
+      "date": "2026-11-12",
       "older": false,
-      "source": "경제·금리",
-      "category": "경제지표",
-      "region": "미국",
-      "indicator": "CPI",
-      "label": "경제지표 · 미국 CPI"
+      "source": "지정학",
+      "category": "지정학",
+      "region": null,
+      "indicator": null,
+      "label": "지정학"
     },
     {
-      "title": "Hegseth impeachment effort torpedoed in House",
-      "title_ko": "헤그세스 탄핵 추진, 하원에서 무산",
+      "title": "General strikes to paralyze Spain as protestors clash with police ahead of election campaign",
+      "title_ko": "총선 운동을 앞두고 시위대가 경찰과 충돌하는 가운데 총파업이 스페인을 마비시킬 전망",
       "summary": [
-        "트럼프 대통령과 갈등을 빚어 온 공화당 토머스 매시 하원의원이 헤그세스 탄핵 공방을 촉발했다.",
-        "매시 의원이 탄핵 문제를 꺼낸 시점은 '블루 웨이브' 중간선거가 치러진 지 며칠 뒤였다.",
-        "헤그세스 탄핵 추진은 하원에서 좌초됐다.",
+        "스페인 노동자 수백만 명이 수요일 파업에 참여할 것으로 예상된다.",
+        "이번 파업은 스페인에서 14년 만에 열리는 첫 총파업이다.",
+        "제목에 따르면 시위대가 경찰과 충돌했으며 선거 운동을 앞둔 시점에 파업이 벌어진다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-      "published": "2026-11-10T23:46:41+00:00",
-      "date": "2026-11-11",
+      "link": "https://www.cnbc.com/2026/11/11/spain-protests-general-strikes-election.html",
+      "published": "2026-11-11T18:02:32+00:00",
+      "date": "2026-11-12",
       "older": false,
       "source": "지정학",
       "category": "정치·정책",
@@ -213,83 +273,24 @@
       "label": "정치·정책"
     },
     {
-      "title": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
-      "title_ko": "코어위브, 매출 예상 상회하고 가이던스 상향... AI 둔화 우려 완화",
+      "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+      "title_ko": "연준 굴스비, 중앙은행이 추가 인상을 저울질하는 가운데 물가 보고서를 \"불안한 수준에 가깝다\"고 평가",
       "summary": [
-        "코어위브가 매출 부문에서 예상치를 웃돌았다.",
-        "코어위브가 가이던스를 상향 조정했고, 이로 인해 AI 둔화 우려가 누그러졌다.",
-        "이 네오클라우드 업체의 주가는 3분기 실적 발표를 앞두고 크게 하락한 상태였다.",
+        "굴스비 연준 인사는 이번 물가 보고서를 \"불안한 수준에 가깝다(borderline disturbing)\"고 표현했다.",
+        "10월 소비자물가지수가 예상보다 더 크게 올랐다.",
+        "이 결과로 연준 관계자들 사이에서 경계심이 커졌고, 중앙은행은 추가 금리 인상을 저울질하고 있다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
-      "published": "2026-11-10T23:16:15+00:00",
-      "date": "2026-11-11",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
-      "title_ko": "엔비디아 젠슨 황, 불륜 사실 공개 후 사무실 복귀하며 '평소와 다름없는' 모습 연출 시도",
-      "summary": [
-        "엔비디아 직원들은 불륜 사실을 공개한 젠슨 황 CEO가 사무실로 복귀하던 때의 분위기를 \"슬프다\"고 표현했다.",
-        "젠슨 황 CEO는 불륜 사실을 공개한 뒤 사무실에 복귀했다.",
-        "제목에 따르면 황 CEO는 복귀 후 '평소와 다름없는' 모습을 보이려 했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/10/nvidia-jensen-huang-affair-office.html",
-      "published": "2026-11-10T23:11:34+00:00",
-      "date": "2026-11-11",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Schumer accuses Trump of defending Nvidia CEO Jensen Huang at cost of national security",
-      "title_ko": "슈머, 트럼프가 국가 안보를 희생하며 엔비디아 CEO 젠슨 황을 옹호한다고 비판",
-      "summary": [
-        "척 슈머는 트럼프가 국가 안보를 희생하면서까지 엔비디아 CEO 젠슨 황을 옹호하고 있다고 비난했다.",
-        "중국 특별위원회 공화당 소속 위원장인 존 물레나르(미시간) 하원의원은 CNBC에 젠슨 황의 관계에 대한 답변을 기대한다고 말했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-      "published": "2026-11-10T23:06:44+00:00",
-      "date": "2026-11-11",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "White House vows to press ahead with tariffs despite midterm backlash over rising prices",
-      "title_ko": "백악관, 중간선거 앞두고 물가 상승 반발에도 관세 정책 밀어붙이겠다고 공언",
-      "summary": [
-        "백악관은 물가 상승에 대한 반발이 중간선거를 앞두고 커지는 가운데에도 관세 정책을 계속 추진하겠다고 밝혔다.",
-        "워싱턴에서 열린 정상회의에서 기업 경영진들은 비용 상승과 공급망 변화에 대해 경고했다.",
-        "여론조사에서는 트럼프 대통령의 관세에 대한 반대가 커지고 있는 것으로 나타났다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/10/trump-tariffs-midterms-gary-cohn-inflation.html",
-      "published": "2026-11-10T21:45:46+00:00",
-      "date": "2026-11-11",
+      "link": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+      "published": "2026-11-11T16:49:02+00:00",
+      "date": "2026-11-12",
       "older": false,
       "source": "지정학",
-      "category": "지정학",
-      "region": null,
-      "indicator": null,
-      "label": "지정학"
+      "category": "경제지표",
+      "region": "미국",
+      "indicator": "CPI",
+      "label": "경제지표 · 미국 CPI"
     }
   ]
 }
