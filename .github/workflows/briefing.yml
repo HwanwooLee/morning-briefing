@@ -2,7 +2,7 @@ name: 아침 브리핑
 
 on:
   schedule:
-    - cron: "0 23 * * 0-4" # UTC 일~목 23:00 = 한국 시간 월~금 아침 8시
+    - cron: "45 22 * * 0-4" # 한국 시간 월~금 07:45 (메인)
   workflow_dispatch:        # Actions 탭에서 수동 실행
 
 permissions:
