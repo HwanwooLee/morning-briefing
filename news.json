@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-12T12:32:23.562151+09:00",
+  "updated_at": "2026-11-13T11:53:57.584350+09:00",
   "window": {
-    "from": "2026-11-11T08:00:00+09:00",
-    "description": "2026-11-11 08:00 이후"
+    "from": "2026-11-12T08:00:00+09:00",
+    "description": "2026-11-12 08:00 이후"
   },
   "indices": [
     {
@@ -12,10 +12,10 @@
       "source": "FRED",
       "code": "NASDAQCOM",
       "market": "US",
-      "date": "2026-11-10",
-      "close": 25065.87,
-      "prev_close": 25253.14,
-      "change_pct": -0.74,
+      "date": "2026-11-11",
+      "close": 25466.19,
+      "prev_close": 25065.87,
+      "change_pct": 1.6,
       "delayed": true
     },
     {
@@ -23,10 +23,10 @@
       "source": "FMP",
       "code": "^GSPC",
       "market": "US",
-      "date": "2026-11-11",
-      "close": 7619.38,
-      "prev_close": 7520.93,
-      "change_pct": 1.31,
+      "date": "2026-11-12",
+      "close": 7592.4,
+      "prev_close": 7619.38,
+      "change_pct": -0.35,
       "delayed": false
     },
     {
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-11",
-      "close": 5375.36,
-      "prev_close": 5239.13,
-      "change_pct": 2.6,
+      "date": "2026-11-12",
+      "close": 5342.73,
+      "prev_close": 5375.36,
+      "change_pct": -0.61,
       "delayed": false
     }
   ],
@@ -153,78 +153,18 @@
   },
   "items": [
     {
-      "title": "Elon Musk says it would be an 'honor' to hire Nvidia's Jensen Huang",
-      "title_ko": "일론 머스크, 엔비디아 젠슨 황을 영입하는 것은 \"영광\"이라고 밝혀",
+      "title": "Cerebras surges 17% after beating on quarterly revenue and announcing Microsoft deal",
+      "title_ko": "세레브라스, 분기 매출 예상 상회와 마이크로소프트 계약 발표 후 17% 급등",
       "summary": [
-        "일론 머스크가 엑스(X)에 올린 글에서 젠슨 황을 고용하는 것이 \"영광\"일 것이라고 말했다.",
-        "이 게시글은 엔비디아 이사회가 황을 축출하려 준비 중이라는 보도가 나오는 가운데 올라왔다.",
-        "해당 보도의 대상은 엔비디아의 젠슨 황이다.",
+        "세레브라스가 분기 매출에서 예상을 웃돌았다는 내용이 제목에 나와 있다.",
+        "세레브라스가 마이크로소프트와 새로운 계약을 맺었다고 발표했다.",
+        "세레브라스는 이에 앞서 대형 클라우드 업체인 아마존, 오라클과 협력 관계를 맺었다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
-      "published": "2026-11-12T03:25:05+00:00",
-      "date": "2026-11-12",
-      "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "What we know so far about Nvidia partner Megaspeed’s Asia footprint",
-      "title_ko": "엔비디아 파트너 메가스피드의 아시아 사업 현황, 지금까지 알려진 내용",
-      "summary": [
-        "메가스피드는 제한 대상인 엔비디아 칩 수십억 달러어치를 중국에 보낸 데 관여했다는 의혹으로 미국 당국의 조사 중심에 놓여 있다.",
-        "이 회사의 한 임원이 젠슨 황과 불륜 관계였다는 주장도 함께 제기되고 있다.",
-        "기사는 메가스피드의 아시아 사업 규모와 관련해 현재까지 파악된 내용을 다루고 있다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html",
-      "published": "2026-11-12T03:02:03+00:00",
-      "date": "2026-11-12",
-      "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
-      "title_ko": "크레이머, 젠슨 황 CEO 해임설 보도 속 엔비디아 주식에 대한 입장",
-      "summary": [
-        "짐 크레이머는 수요일 밤 엔비디아 이사회가 젠슨 황을 해임하려 준비 중이라는 취지의 뉴스 보도에 안타까움을 표했다.",
-        "해당 보도는 엔비디아 이사회가 황 CEO를 해임할 준비를 하고 있다고 전했다.",
-        "이 기사는 이러한 보도를 두고 나온 크레이머의 엔비디아 주식에 대한 입장을 다룬다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramer-jensen-huang-nvidia-stock-advice.html",
-      "published": "2026-11-12T01:14:21+00:00",
-      "date": "2026-11-12",
-      "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Nvidia prepares to oust Jensen Huang, WSJ reports — stock sinks",
-      "title_ko": "엔비디아, 젠슨 황 축출 준비 중이라고 WSJ 보도…주가 하락",
-      "summary": [
-        "월스트리트저널(WSJ)은 엔비디아가 젠슨 황을 축출할 준비를 하고 있다고 보도했다.",
-        "이 보도는 황이 한 여성과의 불륜을 인정한 지 며칠 만에 나왔다.",
-        "해당 여성은 미국 정보당국이 중국 스파이로 의심하는 인물이라고 소개문은 전한다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
-      "published": "2026-11-12T00:21:27+00:00",
-      "date": "2026-11-12",
+      "link": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
+      "published": "2026-11-13T02:43:26+00:00",
+      "date": "2026-11-13",
       "older": false,
       "source": "AI·빅테크",
       "category": "AI 인프라",
@@ -233,18 +173,18 @@
       "label": "AI 인프라"
     },
     {
-      "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
-      "title_ko": "캐나다 대사, 트럼프 관세가 비용을 끌어올리고 미국 내 투자를 위협한다고 경고",
+      "title": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
+      "title_ko": "젠슨 황 사안이 미중 관계 전망을 어떻게 바꾸는가",
       "summary": [
-        "캐나다 대사는 트럼프 대통령의 관세가 비용을 끌어올리고 있다고 경고했다.",
-        "이 관세는 미국 내 투자를 위협하는 요인으로 지목됐다.",
-        "미국과 캐나다 간 무역 갈등이 계속되면서 양국 간 협상도 더 복잡해지고 있다.",
+        "다음 주 열리는 트럼프와 시진핑의 정상회담을 앞두고 정치적 분위기가 조성되어 있다.",
+        "이번 분위기는 지난 9월 두 정상이 마지막으로 만났을 때와 크게 다르다고 한다.",
+        "기사는 젠슨 황 사안이 미중 관계 전망에 변화를 준다는 관점에서 이 상황을 다룬다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
-      "published": "2026-11-11T22:30:57+00:00",
-      "date": "2026-11-12",
+      "link": "https://www.cnbc.com/2026/11/13/jensen-huang-nvidia-us-china-relations.html",
+      "published": "2026-11-13T01:48:50+00:00",
+      "date": "2026-11-13",
       "older": false,
       "source": "지정학",
       "category": "지정학",
@@ -253,44 +193,104 @@
       "label": "지정학"
     },
     {
-      "title": "General strikes to paralyze Spain as protestors clash with police ahead of election campaign",
-      "title_ko": "총선 운동을 앞두고 시위대가 경찰과 충돌하는 가운데 총파업이 스페인을 마비시킬 전망",
+      "title": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
+      "title_ko": "트럼프 \"이란과 합의 필요 없다\"…\"우리가 이란의 해협을 쥐고 있다\" 발언 뒤 유가 상승",
       "summary": [
-        "스페인 노동자 수백만 명이 수요일 파업에 참여할 것으로 예상된다.",
-        "이번 파업은 스페인에서 14년 만에 열리는 첫 총파업이다.",
-        "제목에 따르면 시위대가 경찰과 충돌했으며 선거 운동을 앞둔 시점에 파업이 벌어진다.",
+        "목요일 유가는 혼조세를 보였다.",
+        "도널드 트럼프 대통령이 최근 발언을 내놓았다.",
+        "이 발언으로 미국과 이란 간 전쟁의 종식이 가까워 보이지 않는다는 우려가 커졌다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/11/spain-protests-general-strikes-election.html",
-      "published": "2026-11-11T18:02:32+00:00",
-      "date": "2026-11-12",
+      "link": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+      "published": "2026-11-13T00:01:19+00:00",
+      "date": "2026-11-13",
       "older": false,
-      "source": "지정학",
+      "source": "시장·암호화폐·유동성",
+      "category": "경제지표",
+      "region": "원자재",
+      "indicator": "유가",
+      "label": "경제지표 · 원자재 유가"
+    },
+    {
+      "title": "Cramer says Jensen Huang betrayed Nvidia shareholders. How to pick up the pieces",
+      "title_ko": "크레이머 \"젠슨 황이 엔비디아 주주들을 배신했다… 수습하는 방법은\"",
+      "summary": [
+        "짐 크레이머는 목요일에 젠슨 황이 엔비디아 주주들을 배신했다고 말했다.",
+        "크레이머는 황이 없다면 \"더 나은 엔비디아는 없고, 다른 엔비디아만 있을 것\"이라고 말했다.",
+        "기사 제목은 이 상황을 어떻게 수습할지에 대한 방법을 다루겠다고 내세운다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-exit-cramer.html",
+      "published": "2026-11-12T23:14:56+00:00",
+      "date": "2026-11-13",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
+      "title_ko": "분석: 엔비디아의 리더십 위기가 'AI의 중앙은행'이라는 칩 제조사의 역할을 시험대에 올려놓다",
+      "summary": [
+        "엔비디아는 다른 기업들과 얽힌 폭넓은 관계망을 갖고 있는 거대 기술 기업이다.",
+        "이 관계망 때문에 엔비디아가 경제와 금융 전반에 광범위한 피해를 줄 수 있다는 가능성이 제기되고 있다.",
+        "기사는 엔비디아의 리더십 위기를 다루며, 엔비디아를 'AI의 중앙은행'이라는 역할에 빗대고 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+      "published": "2026-11-12T23:08:50+00:00",
+      "date": "2026-11-13",
+      "older": false,
+      "source": "경제·금리",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Alice Huang tied to Nvidia’s biggest Chinese competitor",
+      "title_ko": "앨리스 황, 엔비디아의 최대 중국 경쟁사와 연관된 것으로 드러나",
+      "summary": [
+        "젠슨 황과 관계를 맺었던 것으로 알려진 여성이 앨리스 황이라고 기사는 전한다.",
+        "앨리스 황은 엔비디아의 주요 경쟁사인 화웨이에 컴퓨팅 파워를 제공한 기업들의 지분도 보유했다.",
+        "기사는 이 같은 점을 근거로 앨리스 황이 엔비디아의 최대 중국 경쟁사와 연관되어 있다고 보도한다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/12/alice-huang-jensen-huang-nvidia-huawei.html",
+      "published": "2026-11-12T22:47:28+00:00",
+      "date": "2026-11-13",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+      "title_ko": "연준, 정책 전환으로 2027년 10월 회의에서는 금리 표결을 하지 않기로",
+      "summary": [
+        "내년에는 표결을 하는 회의가 모두 일곱 차례 열린다.",
+        "10월 회의는 정책을 더 깊이 논의하기 위한 추가 시간으로 마련된다.",
+        "10월 회의에서는 공식 표결도, 회의 후 성명도 없다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+      "published": "2026-11-12T19:05:25+00:00",
+      "date": "2026-11-13",
+      "older": false,
+      "source": "시장·암호화폐·유동성",
       "category": "정치·정책",
       "region": null,
       "indicator": null,
       "label": "정치·정책"
-    },
-    {
-      "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-      "title_ko": "연준 굴스비, 중앙은행이 추가 인상을 저울질하는 가운데 물가 보고서를 \"불안한 수준에 가깝다\"고 평가",
-      "summary": [
-        "굴스비 연준 인사는 이번 물가 보고서를 \"불안한 수준에 가깝다(borderline disturbing)\"고 표현했다.",
-        "10월 소비자물가지수가 예상보다 더 크게 올랐다.",
-        "이 결과로 연준 관계자들 사이에서 경계심이 커졌고, 중앙은행은 추가 금리 인상을 저울질하고 있다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-      "published": "2026-11-11T16:49:02+00:00",
-      "date": "2026-11-12",
-      "older": false,
-      "source": "지정학",
-      "category": "경제지표",
-      "region": "미국",
-      "indicator": "CPI",
-      "label": "경제지표 · 미국 CPI"
     }
   ]
 }
