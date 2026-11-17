@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-16T11:23:26.128284+09:00",
+  "updated_at": "2026-11-17T13:47:11.395287+09:00",
   "window": {
-    "from": "2026-11-13T08:00:00+09:00",
-    "description": "2026-11-13 08:00 이후"
+    "from": "2026-11-16T08:00:00+09:00",
+    "description": "2026-11-16 08:00 이후"
   },
   "indices": [
     {
@@ -12,10 +12,10 @@
       "source": "FRED",
       "code": "NASDAQCOM",
       "market": "US",
-      "date": "2026-11-13",
-      "close": 25136.27,
-      "prev_close": 25366.09,
-      "change_pct": -0.91,
+      "date": "2026-11-16",
+      "close": 24509.76,
+      "prev_close": 25136.27,
+      "change_pct": -2.49,
       "delayed": false
     },
     {
@@ -23,10 +23,10 @@
       "source": "FMP",
       "code": "^GSPC",
       "market": "US",
-      "date": "2026-11-13",
-      "close": 7561.67,
-      "prev_close": 7592.4,
-      "change_pct": -0.4,
+      "date": "2026-11-16",
+      "close": 7416.59,
+      "prev_close": 7561.67,
+      "change_pct": -1.92,
       "delayed": false
     },
     {
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-13",
-      "close": 5290.53,
-      "prev_close": 5342.73,
-      "change_pct": -0.98,
+      "date": "2026-11-16",
+      "close": 5100.5,
+      "prev_close": 5290.53,
+      "change_pct": -3.59,
       "delayed": false
     }
   ],
@@ -153,18 +153,18 @@
   },
   "items": [
     {
-      "title": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
-      "title_ko": "중국 경기 둔화, 10월 들어 심화…산업생산·소매판매·투자 모두 예상치 하회",
+      "title": "Third U.S. carrier arrives, stoking concerns about renewed conflicts with Iran",
+      "title_ko": "세 번째 미국 항공모함 도착, 이란과의 분쟁 재개 우려 키워",
       "summary": [
-        "투자 부진이 더 깊어졌고, 소매판매는 이번에도 산업생산에 못 미쳤다.",
-        "부동산 시장 침체로 가계 자산이 줄어드는 현상이 5년째 이어지고 있다.",
-        "10월 산업생산, 소매판매, 투자 지표가 모두 시장 추정치에 미치지 못했다.",
+        "세 번째 미국 항공모함이 걸프 해역에 도착했다.",
+        "이란은 미군을 향한 위협 수위를 높였다.",
+        "이런 상황이 군사적 긴장이 다시 시작될 수 있다는 우려를 키우고 있다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
-      "published": "2026-11-16T02:14:03+00:00",
-      "date": "2026-11-16",
+      "link": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
+      "published": "2026-11-17T04:34:24+00:00",
+      "date": "2026-11-17",
       "older": false,
       "source": "지정학",
       "category": "지정학",
@@ -173,124 +173,124 @@
       "label": "지정학"
     },
     {
-      "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
-      "title_ko": "엔비디아로 돌아오라는 젠슨 황을 향한 기술업계의 요구 커지는 중",
+      "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+      "title_ko": "분석: 연준 의장은 AI 혁명이 다가온다고 본다, 이제 그 의미를 파악해야 한다",
       "summary": [
-        "젠슨 황의 엔비디아 CEO 복귀를 요구하는 목소리가 커지고 있다.",
-        "기술업계 경영진과 주요 주주들이 그의 복귀 가능성을 지지하고 있다.",
-        "이러한 움직임은 그가 사임한 이후에 나온 것이다.",
+        "케빈 워시는 AI가 전환점에 와 있다고 보고 있다.",
+        "그는 일자리와 금리를 둘러싼 어려운 질문에 직면해 있다.",
+        "기사는 이를 연준 의장이 AI 혁명의 의미를 파악해야 하는 과제로 다룬다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
-      "published": "2026-11-16T01:54:56+00:00",
-      "date": "2026-11-16",
-      "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
-      "title_ko": "일본 경제, 에너지 비용 부담 속에 3분기 예상 밖 위축",
-      "summary": [
-        "일본 경제가 3분기에 예상과 달리 위축된 것으로 나타났다.",
-        "가계에 지급되던 에너지 보조금이 9월에 종료된 것으로 전해졌다.",
-        "보조금이 끝나면서 이란 전쟁으로 높아진 에너지 가격의 영향이 경제에 그대로 미쳤다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
-      "published": "2026-11-16T01:02:48+00:00",
-      "date": "2026-11-16",
+      "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+      "published": "2026-11-17T00:42:33+00:00",
+      "date": "2026-11-17",
       "older": false,
       "source": "경제·금리",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Jim Cramer says Nvidia’s leadership shake-up won’t derail the AI trade",
+      "title_ko": "짐 크레이머, \"엔비디아 경영진 개편이 AI 트레이드를 흔들지는 않을 것\"",
+      "summary": [
+        "CNBC의 짐 크레이머가 엔비디아 경영진 개편이 AI 호황을 무너뜨릴 수 있다는 우려에 반박했다.",
+        "크레이머는 이번 경영진 개편이 AI 트레이드를 흔들지 않을 것이라는 입장을 밝혔다.",
+        "엔비디아의 경영진 개편을 둘러싸고 AI 호황이 흔들릴 수 있다는 우려가 제기된 상태다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/16/nvidia-cramer-ai-trade-leadership-change.html",
+      "published": "2026-11-16T23:23:47+00:00",
+      "date": "2026-11-17",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Aschenbrenner’s Situational Awareness made AI bets again before October rout",
+      "title_ko": "아셴브레너의 '상황 인식(Situational Awareness)', 10월 급락 전에 다시 AI에 베팅",
+      "summary": [
+        "레오폴트 아셴브레너의 헤지펀드는 여름 동안 거의 무너질 뻔했던 곳이다.",
+        "이 펀드는 주가가 하락하기 시작하기 전에 AI 관련 주식을 매수했다.",
+        "기사 제목은 이 펀드가 10월 급락 이전에 다시 AI에 베팅했다고 전한다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
+      "published": "2026-11-16T23:05:12+00:00",
+      "date": "2026-11-17",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "CNBC's The China Connection newsletter: As Nike and Lululemon struggle in China, Xiaohongshu is helping local brands take off",
+      "title_ko": "CNBC 차이나 커넥션 뉴스레터: 나이키와 룰루레몬이 중국에서 고전하는 가운데, 샤오홍슈가 현지 브랜드의 성장을 돕고 있다",
+      "summary": [
+        "나이키와 룰루레몬은 중국에서 어려움을 겪고 있다.",
+        "샤오홍슈가 중국 현지 브랜드가 도약하도록 돕고 있다.",
+        "유로모니터 인터내셔널에 따르면 새로 떠오르는 중국 패션 브랜드의 성장 뒤에는 한 가지 성공 공식이 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/16/as-nike-lululemon-struggle-in-china-xiaohongshu-helps-local-brands.html",
+      "published": "2026-11-16T23:00:01+00:00",
+      "date": "2026-11-17",
+      "older": false,
+      "source": "지정학",
       "category": "지정학",
       "region": null,
       "indicator": null,
       "label": "지정학"
     },
     {
-      "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
-      "title_ko": "러트닉, 엔비디아 스파이 스캔들 관련 의혹에 직면… 아들들의 회사가 엔비디아와 연관",
+      "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+      "title_ko": "미국산 원유, 중동 수출 회복에 배럴당 85달러로 하락",
       "summary": [
-        "젠슨 황이 엔비디아 CEO에서 사임했다.",
-        "이 사임으로 하워드 러트닉 상무장관에 대한 관심과 검증이 다시 커졌다.",
-        "러트닉 장관 가족이 엔비디아와 맺고 있는 금전적 관계도 다시 주목받고 있다.",
+        "미국산 원유 가격이 배럴당 85달러로 내렸다.",
+        "중동발 수출이 회복되고 있다는 점이 하락 배경으로 제시되었다.",
+        "4분기에 원유가 공급 과잉이 될 것이라는 전망이 나오면서 유가가 떨어지고 있다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-      "published": "2026-11-15T19:58:21+00:00",
-      "date": "2026-11-16",
+      "link": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+      "published": "2026-11-16T22:19:02+00:00",
+      "date": "2026-11-17",
       "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
+      "source": "지정학",
+      "category": "경제지표",
+      "region": "원자재",
+      "indicator": "유가",
+      "label": "경제지표 · 원자재 유가"
     },
     {
-      "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
-      "title_ko": "베선트, 엔비디아에 '극적인 쇄신' 촉구…외부 출신 CEO 영입 주장",
+      "title": "Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly",
+      "title_ko": "비트코인, 청산 연쇄 속에 6만 2,000달러까지 하락한 뒤 소폭 반등",
       "summary": [
-        "베선트는 엔비디아에 \"극적인 쇄신\"이 필요하다며 외부에서 CEO를 영입해야 한다고 촉구했다.",
-        "베선트는 중국으로의 반도체 유출 의혹과 관련해 하워드 러트닉이 이끄는 부처를 비판했다.",
-        "베선트는 이 사안에 대한 도널드 트럼프 대통령의 대응은 옹호했다.",
+        "비트코인이 6만 2,000달러까지 밀렸다가 소폭 반등했다.",
+        "비트코인의 약세가 이어지면서 주요 기술적 지지선 아래로 떨어졌다.",
+        "이로 인해 주말을 앞두고 롱 포지션 청산이 연쇄적으로 발생했다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
-      "published": "2026-11-15T18:10:18+00:00",
-      "date": "2026-11-16",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "CFTC Chair Selig tells CNBC crypto industry is embracing agency rules as legislation hopes fade",
-      "title_ko": "CFTC 셀릭 위원장, CNBC에 \"법안 기대가 줄어드는 가운데 암호화폐 업계가 CFTC 규칙을 받아들이고 있다\"",
-      "summary": [
-        "셀릭 CFTC 위원장이 CNBC와의 인터뷰에서 암호화폐 업계가 CFTC의 규칙을 받아들이고 있다고 말했다.",
-        "이는 암호화폐 관련 입법에 대한 기대가 약해지고 있는 상황에서 나온 발언이다.",
-        "미국 최고 상품 규제 당국인 CFTC는 10월에 암호화폐 자산군에 대한 관할권을 주장하기 위한 규칙안을 발표했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html",
-      "published": "2026-11-13T20:07:30+00:00",
-      "date": "2026-11-14",
+      "link": "https://www.cnbc.com/2026/11/16/bitcoin-slides-to-62000-following-liquidation-cascade-then-rebounds-slightly.html",
+      "published": "2026-11-16T21:26:42+00:00",
+      "date": "2026-11-17",
       "older": false,
       "source": "AI·빅테크",
       "category": "암호화폐",
       "region": null,
       "indicator": null,
       "label": "암호화폐"
-    },
-    {
-      "title": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-      "title_ko": "트럼프 \"이란과 합의 필요 없다\"…\"우리가 이란의 해협을 쥐고 있다\" 발언 뒤 유가 상승",
-      "summary": [
-        "목요일 유가는 혼조세를 보였다.",
-        "도널드 트럼프 대통령이 최근 발언을 내놓았다.",
-        "이 발언으로 미국과 이란 간 전쟁의 종식이 가까워 보이지 않는다는 우려가 커졌다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-      "published": "2026-11-13T00:01:19+00:00",
-      "date": "2026-11-13",
-      "older": false,
-      "source": "시장·암호화폐·유동성",
-      "category": "경제지표",
-      "region": "원자재",
-      "indicator": "유가",
-      "label": "경제지표 · 원자재 유가"
     }
   ]
 }
