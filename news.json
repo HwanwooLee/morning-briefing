@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-19T12:50:39.156514+09:00",
+  "updated_at": "2026-11-20T12:43:37.144634+09:00",
   "window": {
-    "from": "2026-11-18T08:00:00+09:00",
-    "description": "2026-11-18 08:00 이후"
+    "from": "2026-11-19T08:00:00+09:00",
+    "description": "2026-11-19 08:00 이후"
   },
   "indices": [
     {
@@ -12,21 +12,21 @@
       "source": "FRED",
       "code": "NASDAQCOM",
       "market": "US",
-      "date": null,
-      "close": null,
-      "prev_close": null,
-      "change_pct": null,
-      "delayed": false
+      "date": "2026-11-18",
+      "close": 24429.88,
+      "prev_close": 24328.38,
+      "change_pct": 0.42,
+      "delayed": true
     },
     {
       "name": "S&P 500",
       "source": "FMP",
       "code": "^GSPC",
       "market": "US",
-      "date": "2026-11-18",
-      "close": 7323.63,
-      "prev_close": 7340.53,
-      "change_pct": -0.23,
+      "date": "2026-11-19",
+      "close": 7175.83,
+      "prev_close": 7323.63,
+      "change_pct": -2.02,
       "delayed": false
     },
     {
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-18",
-      "close": 5067.44,
-      "prev_close": 4968.48,
-      "change_pct": 1.99,
+      "date": "2026-11-19",
+      "close": 5137.89,
+      "prev_close": 5067.44,
+      "change_pct": 1.39,
       "delayed": false
     }
   ],
@@ -153,24 +153,124 @@
   },
   "items": [
     {
-      "title": "'Parasite' backer and other South Korean media, gaming and travel stocks rally on China trade deal",
-      "title_ko": "'기생충' 투자사 등 한국 미디어·게임·여행 관련주, 중국과의 무역 합의에 상승",
+      "title": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
+      "title_ko": "상원, AI·에너지 업계가 지지하는 BAAJA 인허가 개혁 법안 통과",
       "summary": [
-        "한국의 미디어, 게임, 여행 관련 주식이 중국 시장 접근성이 커질 것이라는 기대감에 급등했다.",
-        "이번 상승은 중국과의 무역 합의를 계기로 나타났다.",
-        "'기생충'의 투자사도 상승한 한국 미디어 관련주에 포함되었다.",
+        "상원이 AI·에너지 업계의 지지를 받는 BAAJA 인허가 개혁 법안을 통과시켰다.",
+        "이번 상원 통과는 법안이 법으로 확정되기 위한 핵심 단계로 소개되었다.",
+        "법안은 트럼프 대통령의 책상에 오르기 전에 하원도 통과해야 한다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/19/china-south-korea-trade-deal-films-gaming.html",
-      "published": "2026-11-19T03:43:38+00:00",
-      "date": "2026-11-19",
+      "link": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+      "published": "2026-11-20T03:30:45+00:00",
+      "date": "2026-11-20",
       "older": false,
       "source": "지정학",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
+      "title_ko": "소프트뱅크, AI 매도세가 앤스로픽 데뷔 이후 아시아 기술주를 강타하며 16% 넘게 급락",
+      "summary": [
+        "소프트뱅크 주가가 16% 넘게 급락했다.",
+        "AI 관련 매도세가 아시아 기술주 전반에 타격을 주었다.",
+        "앞서 기술주 중심의 나스닥 종합지수는 앤스로픽의 월가 데뷔 이후 하룻밤 사이 2% 넘게 하락했다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
+      "published": "2026-11-20T03:30:34+00:00",
+      "date": "2026-11-20",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
+      "title_ko": "상무부, 중국 기업에 AI 칩 87만 9천 개 이상 판매 승인했다고 매스트 의원 밝혀",
+      "summary": [
+        "매스트 하원의원은 상무부가 중국 기업들에 AI 칩 87만 9천 개 이상의 판매를 승인했다고 말했다.",
+        "의회 의원들은 젠슨 황 논란 이후 중국에 대한 칩 판매 수출 통제를 강화하는 법안을 추진해 왔다.",
+        "이 승인 규모 공개는 중국 대상 칩 수출 통제를 둘러싼 의회의 문제 제기와 맞물려 나왔다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+      "published": "2026-11-20T00:53:55+00:00",
+      "date": "2026-11-20",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "AMD dives on short seller report of alleged China exposure",
+      "title_ko": "AMD, 중국 연계 의혹 제기한 공매도 보고서에 급락",
+      "summary": [
+        "AMD 주가는 한 공매도 투자자가 자사 펌웨어가 제재 명단에 오른 중국 기업에서 발견됐다고 주장한 뒤 7% 넘게 하락해 마감했다.",
+        "해당 공매도 투자자는 AMD의 펌웨어가 블랙리스트에 오른 중국 기업에 나타났다고 주장했다.",
+        "AMD는 자사가 미국 법을 준수하고 있다고 밝혔다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+      "published": "2026-11-20T00:08:34+00:00",
+      "date": "2026-11-20",
+      "older": false,
+      "source": "AI·빅테크",
       "category": "지정학",
       "region": null,
       "indicator": null,
       "label": "지정학"
+    },
+    {
+      "title": "Cramer says Nvidia’s woes are trumping Anthropic excitement for the rest of the AI trade",
+      "title_ko": "크레이머 \"엔비디아의 악재가 나머지 AI 관련주에서 앤트로픽을 둘러싼 기대감을 압도하고 있다\"",
+      "summary": [
+        "짐 크레이머는 엔비디아의 리더십 위기가 앤트로픽의 역사적인 기업공개(IPO)를 가리고 있다고 경고했다.",
+        "그는 엔비디아를 둘러싼 문제가 AI 관련 종목 전반에 영향을 주고 있다고 말했다.",
+        "기사는 앤트로픽의 IPO를 역사적인 사건으로 표현했다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/19/nvidia-anthropic-ipo-ai-trade.html",
+      "published": "2026-11-19T23:22:53+00:00",
+      "date": "2026-11-20",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Kraken parent's acquisition of Tribe Capital flags new chapter in evolution of crypto exchanges",
+      "title_ko": "크라켄 모회사의 트라이브 캐피털 인수, 암호화폐 거래소 진화의 새 장을 알리다",
+      "summary": [
+        "암호화폐 거래소 크라켄의 모회사 페이워드(Payward)가 벤처캐피털 및 자산운용 업체 트라이브 캐피털(Tribe Capital)을 인수했다.",
+        "이번 인수로 페이워드는 비상장 시장(프라이빗 마켓)으로 사업 영역을 넓히고 있다.",
+        "기사는 이 인수를 암호화폐 거래소가 진화하는 새로운 단계의 신호로 보고 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/19/acquisition-of-tribe-capital-flags-new-chapter-in-evolution-of-crypto-exchanges.html",
+      "published": "2026-11-19T20:33:05+00:00",
+      "date": "2026-11-20",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "암호화폐",
+      "region": null,
+      "indicator": null,
+      "label": "암호화폐"
     },
     {
       "title": "Musk says Jensen Huang is irreplaceable, regrets midterm spending",
@@ -191,106 +291,6 @@
       "region": null,
       "indicator": null,
       "label": "정치·정책"
-    },
-    {
-      "title": "Palo Alto stock surges as all signs point to how important cybersecurity is in the AI age",
-      "title_ko": "팔로알토 주가 급등, AI 시대에 사이버 보안이 얼마나 중요한지 모든 징후가 보여준다",
-      "summary": [
-        "팔로알토 주가가 급등했다는 내용의 기사다.",
-        "기사는 모든 것을 아우르면서 신속하게 대응하는 사이버 보안 플랫폼의 필요성이 그 어느 때보다 커졌다고 전한다.",
-        "기사는 AI 시대를 배경으로 사이버 보안의 중요성이 커졌다고 짚는다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/investingclub/2026/11/18/palo-alto-surges-as-all-signs-point-to-cybersecurity-need-in-the-ai-age.html",
-      "published": "2026-11-19T01:29:06+00:00",
-      "date": "2026-11-19",
-      "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Microsoft CEO Satya Nadella calls Outlook outage a 'perfect storm.' Here's what went wrong",
-      "title_ko": "마이크로소프트 CEO 사티아 나델라, 아웃룩 장애를 '완벽한 폭풍'이라고 표현… 무엇이 잘못됐나",
-      "summary": [
-        "마이크로소프트 CEO 사티아 나델라가 아웃룩 장애를 '완벽한 폭풍'이라고 불렀다.",
-        "기사는 이번 장애에서 무엇이 잘못됐는지를 다룬다.",
-        "마이크로소프트 주가는 11월 4일 사상 최고가로 마감한 뒤 약 9% 가까이 하락했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/18/microsoft-put-the-ai-threat-to-software-behind-it-then-came-the-outage.html",
-      "published": "2026-11-19T00:18:28+00:00",
-      "date": "2026-11-19",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Palo Alto inks $4.5 billion deal for AI startup Applied Compute, shares pop 7% on earnings",
-      "title_ko": "팔로알토, 44억 5천만 달러 규모로 AI 스타트업 애플라이드 컴퓨트 인수 계약... 실적 발표 후 주가 7% 상승",
-      "summary": [
-        "팔로알토 네트웍스가 AI 스타트업 애플라이드 컴퓨트를 45억 달러 규모로 인수하는 계약을 맺었다.",
-        "이 회사의 주가는 실적 발표 후 7% 올랐다.",
-        "팔로알토 네트웍스는 AI에 맞서는 사이버 보안 도구 수요를 공략하기 위해 기업 인수를 꾸준히 이어 왔다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html",
-      "published": "2026-11-19T00:07:06+00:00",
-      "date": "2026-11-19",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Jim Cramer says Nvidia has a new problem — and it has nothing to do with earnings",
-      "title_ko": "짐 크레이머 \"엔비디아에 새로운 문제 생겼다… 실적과는 무관\"",
-      "summary": [
-        "CNBC의 짐 크레이머는 앤트로픽의 기업공개(IPO)가 엔비디아에 또 다른 악재가 된다고 경고했다.",
-        "앤트로픽의 IPO는 시장의 큰 기대를 받고 있는 것으로 소개됐다.",
-        "크레이머는 이 문제가 엔비디아의 실적과는 관련이 없다고 말했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/18/nvidia-cramer-anthropic-ipo-ceo.html",
-      "published": "2026-11-18T23:46:32+00:00",
-      "date": "2026-11-19",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Nvidia interim CEO Kress tells employees ‘let’s move forward’ at first all-hands meeting since Jensen Huang exit",
-      "title_ko": "엔비디아 임시 CEO 크레스, 젠슨 황 퇴진 후 첫 전체 직원회의에서 직원들에게 \"앞으로 나아가자\" 당부",
-      "summary": [
-        "엔비디아의 임시 CEO 콜레트 크레스가 젠슨 황의 퇴진 이후 처음 열린 전체 직원회의에서 직원들에게 앞으로 나아가자고 말했다.",
-        "크레스는 직원들에게 전진을 촉구했다.",
-        "크레스는 젠슨 황의 퇴진 이후 임금 인상을 제시했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
-      "published": "2026-11-18T23:45:50+00:00",
-      "date": "2026-11-19",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
     }
   ]
 }
