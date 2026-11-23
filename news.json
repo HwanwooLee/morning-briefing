@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-20T12:43:37.144634+09:00",
+  "updated_at": "2026-11-23T12:06:45.498070+09:00",
   "window": {
-    "from": "2026-11-19T08:00:00+09:00",
-    "description": "2026-11-19 08:00 이후"
+    "from": "2026-11-20T08:00:00+09:00",
+    "description": "2026-11-20 08:00 이후"
   },
   "indices": [
     {
@@ -12,10 +12,10 @@
       "source": "FRED",
       "code": "NASDAQCOM",
       "market": "US",
-      "date": "2026-11-18",
-      "close": 24429.88,
-      "prev_close": 24328.38,
-      "change_pct": 0.42,
+      "date": "2026-11-19",
+      "close": 23879.2,
+      "prev_close": 24429.88,
+      "change_pct": -2.25,
       "delayed": true
     },
     {
@@ -23,10 +23,10 @@
       "source": "FMP",
       "code": "^GSPC",
       "market": "US",
-      "date": "2026-11-19",
-      "close": 7175.83,
-      "prev_close": 7323.63,
-      "change_pct": -2.02,
+      "date": "2026-11-20",
+      "close": 6910.39,
+      "prev_close": 7175.83,
+      "change_pct": -3.7,
       "delayed": false
     },
     {
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-19",
-      "close": 5137.89,
-      "prev_close": 5067.44,
-      "change_pct": 1.39,
+      "date": "2026-11-20",
+      "close": 4869.96,
+      "prev_close": 5137.89,
+      "change_pct": -5.21,
       "delayed": false
     }
   ],
@@ -153,98 +153,78 @@
   },
   "items": [
     {
-      "title": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
-      "title_ko": "상원, AI·에너지 업계가 지지하는 BAAJA 인허가 개혁 법안 통과",
+      "title": "Saudi Arabia, Bahrain report new attacks as Iran says it remains open to a deal with U.S.",
+      "title_ko": "사우디아라비아·바레인 신규 공격 보고, 이란은 미국과의 합의 가능성 열려 있다고 밝혀",
       "summary": [
-        "상원이 AI·에너지 업계의 지지를 받는 BAAJA 인허가 개혁 법안을 통과시켰다.",
-        "이번 상원 통과는 법안이 법으로 확정되기 위한 핵심 단계로 소개되었다.",
-        "법안은 트럼프 대통령의 책상에 오르기 전에 하원도 통과해야 한다.",
+        "사우디아라비아는 이란이 지원하는 후티 반군이 발사한 드론을 파괴했다고 밝혔다.",
+        "바레인은 산업 시설 한 곳이 이란의 발사체에 피격됐다고 밝혔다.",
+        "이란은 미국과의 합의에 여전히 열려 있다는 입장을 밝혔다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
-      "published": "2026-11-20T03:30:45+00:00",
-      "date": "2026-11-20",
+      "link": "https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html",
+      "published": "2026-11-22T13:25:47+00:00",
+      "date": "2026-11-22",
       "older": false,
       "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
-      "title_ko": "소프트뱅크, AI 매도세가 앤스로픽 데뷔 이후 아시아 기술주를 강타하며 16% 넘게 급락",
-      "summary": [
-        "소프트뱅크 주가가 16% 넘게 급락했다.",
-        "AI 관련 매도세가 아시아 기술주 전반에 타격을 주었다.",
-        "앞서 기술주 중심의 나스닥 종합지수는 앤스로픽의 월가 데뷔 이후 하룻밤 사이 2% 넘게 하락했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
-      "published": "2026-11-20T03:30:34+00:00",
-      "date": "2026-11-20",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
-      "title_ko": "상무부, 중국 기업에 AI 칩 87만 9천 개 이상 판매 승인했다고 매스트 의원 밝혀",
-      "summary": [
-        "매스트 하원의원은 상무부가 중국 기업들에 AI 칩 87만 9천 개 이상의 판매를 승인했다고 말했다.",
-        "의회 의원들은 젠슨 황 논란 이후 중국에 대한 칩 판매 수출 통제를 강화하는 법안을 추진해 왔다.",
-        "이 승인 규모 공개는 중국 대상 칩 수출 통제를 둘러싼 의회의 문제 제기와 맞물려 나왔다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-      "published": "2026-11-20T00:53:55+00:00",
-      "date": "2026-11-20",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "AMD dives on short seller report of alleged China exposure",
-      "title_ko": "AMD, 중국 연계 의혹 제기한 공매도 보고서에 급락",
-      "summary": [
-        "AMD 주가는 한 공매도 투자자가 자사 펌웨어가 제재 명단에 오른 중국 기업에서 발견됐다고 주장한 뒤 7% 넘게 하락해 마감했다.",
-        "해당 공매도 투자자는 AMD의 펌웨어가 블랙리스트에 오른 중국 기업에 나타났다고 주장했다.",
-        "AMD는 자사가 미국 법을 준수하고 있다고 밝혔다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-      "published": "2026-11-20T00:08:34+00:00",
-      "date": "2026-11-20",
-      "older": false,
-      "source": "AI·빅테크",
       "category": "지정학",
       "region": null,
       "indicator": null,
       "label": "지정학"
     },
     {
-      "title": "Cramer says Nvidia’s woes are trumping Anthropic excitement for the rest of the AI trade",
-      "title_ko": "크레이머 \"엔비디아의 악재가 나머지 AI 관련주에서 앤트로픽을 둘러싼 기대감을 압도하고 있다\"",
+      "title": "State and federal battle over prediction markets regulation heats up after midterms",
+      "title_ko": "중간선거 이후 예측시장 규제를 둘러싼 주 정부와 연방 정부의 공방 격화",
       "summary": [
-        "짐 크레이머는 엔비디아의 리더십 위기가 앤트로픽의 역사적인 기업공개(IPO)를 가리고 있다고 경고했다.",
-        "그는 엔비디아를 둘러싼 문제가 AI 관련 종목 전반에 영향을 주고 있다고 말했다.",
-        "기사는 앤트로픽의 IPO를 역사적인 사건으로 표현했다.",
+        "중간선거 이후 예측시장 규제를 둘러싼 싸움이 한층 거세지고 있다.",
+        "이 싸움에는 주 정부, 의회, 상품선물거래위원회(CFTC)가 관여하고 있다.",
+        "각 주체가 예측시장 규제를 두고 갈등의 수위를 높이고 있다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/19/nvidia-anthropic-ipo-ai-trade.html",
-      "published": "2026-11-19T23:22:53+00:00",
-      "date": "2026-11-20",
+      "link": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
+      "published": "2026-11-21T13:12:41+00:00",
+      "date": "2026-11-21",
+      "older": false,
+      "source": "지정학",
+      "category": "정치·정책",
+      "region": null,
+      "indicator": null,
+      "label": "정치·정책"
+    },
+    {
+      "title": "How China is using summits to expand its global influence",
+      "title_ko": "중국이 정상회의를 활용해 세계적 영향력을 넓히는 방식",
+      "summary": [
+        "시진핑 중국 국家주석이 세계적 의미를 지닌 또 하나의 기념 촬영 행사를 조율하는 데 힘을 보탰다.",
+        "이 기사는 중국이 정상회의를 통해 국제적 영향력을 확대하는 방식을 다룬다.",
+        "해당 행사는 세계적으로 중요한 의미를 지닌 것으로 소개되었다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
+      "published": "2026-11-21T06:00:02+00:00",
+      "date": "2026-11-21",
+      "older": false,
+      "source": "지정학",
+      "category": "지정학",
+      "region": null,
+      "indicator": null,
+      "label": "지정학"
+    },
+    {
+      "title": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
+      "title_ko": "엔비디아 주가 14% 급락, 2008년 금융위기 이후 최장 주간 하락세로 마감",
+      "summary": [
+        "엔비디아 주가가 14% 급락했다.",
+        "엔비디아는 2008년 금융위기 이후 가장 긴 주간 연속 하락 기록을 세우며 한 주를 마무리했다.",
+        "한때 세계에서 가장 가치가 높았던 엔비디아는 현재 애플, 마이크로소프트, 알파벳에 이어 4위에 올라 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
+      "published": "2026-11-20T22:59:33+00:00",
+      "date": "2026-11-21",
       "older": false,
       "source": "AI·빅테크",
       "category": "AI 인프라",
@@ -253,44 +233,64 @@
       "label": "AI 인프라"
     },
     {
-      "title": "Kraken parent's acquisition of Tribe Capital flags new chapter in evolution of crypto exchanges",
-      "title_ko": "크라켄 모회사의 트라이브 캐피털 인수, 암호화폐 거래소 진화의 새 장을 알리다",
+      "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
+      "title_ko": "트럼프, 시진핑과 젠슨 황 논의했다고 밝혀… 베선트는 CNBC에 엔비디아 칩 수출 정책 변함없다고 말해",
       "summary": [
-        "암호화폐 거래소 크라켄의 모회사 페이워드(Payward)가 벤처캐피털 및 자산운용 업체 트라이브 캐피털(Tribe Capital)을 인수했다.",
-        "이번 인수로 페이워드는 비상장 시장(프라이빗 마켓)으로 사업 영역을 넓히고 있다.",
-        "기사는 이 인수를 암호화폐 거래소가 진화하는 새로운 단계의 신호로 보고 있다.",
+        "트럼프는 중국의 시진핑 주석과 젠슨 황에 대해 이야기를 나눴다고 말했다.",
+        "베선트는 중국에 있는 동안 가진 회담에서 쫓겨난 엔비디아 CEO 이야기는 나오지 않았다고 말했다.",
+        "베선트는 CNBC에서 엔비디아 칩 수출 정책이 바뀌지 않았다고 밝혔다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/19/acquisition-of-tribe-capital-flags-new-chapter-in-evolution-of-crypto-exchanges.html",
-      "published": "2026-11-19T20:33:05+00:00",
-      "date": "2026-11-20",
+      "link": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+      "published": "2026-11-20T22:08:41+00:00",
+      "date": "2026-11-21",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+      "title_ko": "피터슨: 연준 의장은 AI 혁명이 다가온다고 본다, 이제 그 의미를 파악해야 한다",
+      "summary": [
+        "케빈 워시는 AI가 전환점에 있다고 보고 있다.",
+        "그는 일자리와 금리를 둘러싼 어려운 질문에 직면해 있다.",
+        "기사는 연준 의장이 AI 혁명의 의미를 따져봐야 하는 상황을 다룬다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+      "published": "2026-11-20T21:07:08+00:00",
+      "date": "2026-11-21",
+      "older": false,
+      "source": "경제·금리",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Bitcoin's regulation bull case is played out. What could drive crypto gains moving forward",
+      "title_ko": "비트코인의 규제 호재 시나리오는 끝났다, 앞으로 암호화폐 상승을 이끌 요인은 무엇일까",
+      "summary": [
+        "암호화폐 투자자들은 다음 촉매제를 의회 밖에서 찾고 있다.",
+        "상원은 9월에 클래리티법(Clarity Act)을 진전시키지 못했다.",
+        "기사는 비트코인의 규제 호재 시나리오가 이미 소진됐다고 본다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/20/bitcoin-price-catalysts-tokenization-regulation.html",
+      "published": "2026-11-20T18:07:18+00:00",
+      "date": "2026-11-21",
       "older": false,
       "source": "AI·빅테크",
       "category": "암호화폐",
       "region": null,
       "indicator": null,
       "label": "암호화폐"
-    },
-    {
-      "title": "Musk says Jensen Huang is irreplaceable, regrets midterm spending",
-      "title_ko": "머스크 \"젠슨 황은 대체 불가능한 인물\", 중간선거 지출에 후회 표명",
-      "summary": [
-        "일론 머스크는 딜북 서밋(Dealbook Summit)에서 젠슨 황에 대해 이야기했다.",
-        "머스크는 같은 자리에서 미국 중간선거에 쓴 자신의 지출에 대해서도 언급했다.",
-        "머스크는 스페이스X와 테슬라 사이에 겹치는 부분에 대해서도 이야기했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/19/elon-musk-jensen-huang-midterms.html",
-      "published": "2026-11-19T02:49:35+00:00",
-      "date": "2026-11-19",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "정치·정책",
-      "region": null,
-      "indicator": null,
-      "label": "정치·정책"
     }
   ]
 }
