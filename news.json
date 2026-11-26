@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-25T14:02:05.814291+09:00",
+  "updated_at": "2026-11-26T13:22:26.411611+09:00",
   "window": {
-    "from": "2026-11-24T08:00:00+09:00",
-    "description": "2026-11-24 08:00 이후"
+    "from": "2026-11-25T08:00:00+09:00",
+    "description": "2026-11-25 08:00 이후"
   },
   "indices": [
     {
@@ -16,17 +16,17 @@
       "close": 23733.54,
       "prev_close": 24089.56,
       "change_pct": -1.48,
-      "delayed": false
+      "delayed": true
     },
     {
       "name": "S&P 500",
       "source": "FMP",
       "code": "^GSPC",
       "market": "US",
-      "date": "2026-11-24",
-      "close": 7201.09,
-      "prev_close": 7237.17,
-      "change_pct": -0.5,
+      "date": "2026-11-25",
+      "close": 7182.78,
+      "prev_close": 7201.09,
+      "change_pct": -0.25,
       "delayed": false
     },
     {
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-24",
-      "close": 5006.03,
-      "prev_close": 4708.54,
-      "change_pct": 6.32,
+      "date": "2026-11-25",
+      "close": 4697.51,
+      "prev_close": 5006.03,
+      "change_pct": -6.16,
       "delayed": false
     }
   ],
@@ -153,18 +153,18 @@
   },
   "items": [
     {
-      "title": "China’s Xiamen Airlines to buy 50 Boeing jets in $7.4 billion deal",
-      "title_ko": "중국 샤먼항공, 74억 달러 규모로 보잉 항공기 50대 구매",
+      "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+      "title_ko": "트럼프의 최근 관세 조치, 인도에 경쟁 아시아 수출국 대비 우위 안겨준다",
       "summary": [
-        "샤먼항공이 보잉 737-8 항공기 50대를 구매하기로 합의했다.",
-        "이번 거래의 정가(카탈로그 가격) 기준 총액은 약 74억 달러다.",
-        "구매 대상 기종은 보잉 737-8이다.",
+        "방글라데시, 캄보디아, 태국에는 18%, 중국과 베트남에는 20%의 관세가 제안되었다.",
+        "이 관세안은 각국의 무역 협정에 따라 적용 여부가 달라질 수 있다.",
+        "이러한 관세 구도가 인도에 경쟁 면에서 유리한 입장을 제공한다는 것이 기사의 내용이다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/25/china-xiamen-boeing-deal.html",
-      "published": "2026-11-25T03:58:32+00:00",
-      "date": "2026-11-25",
+      "link": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+      "published": "2026-11-26T04:12:18+00:00",
+      "date": "2026-11-26",
       "older": false,
       "source": "지정학",
       "category": "지정학",
@@ -173,58 +173,38 @@
       "label": "지정학"
     },
     {
-      "title": "SoftBank drops 15% as Wall Street AI sell-off ripples across Asian tech names",
-      "title_ko": "소프트뱅크, 월가 AI 매도세가 아시아 기술주로 번지며 15% 하락",
+      "title": "2026년도 의안 제36호 - 통화정책방향",
+      "title_ko": null,
       "summary": [
-        "수요일 아시아 기술주가 급락했으며, 일본 반도체 관련주의 폭락이 하락세를 이끌었다.",
-        "인공지능(AI) 관련 거래에 대한 우려가 다시 불거지면서 투자자들이 동요했다.",
-        "소프트뱅크는 월가의 AI 매도세가 아시아 기술주로 번지는 가운데 15% 하락했다.",
+        "2026년도 의안 제36호는 통화정책방향에 관한 안건이다.",
+        "이 안건의 회의일자는 2026년 11월 26일이다.",
+        "기사 정보에 제시된 내용은 안건 번호, 안건명, 회의일자이다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html",
-      "published": "2026-11-25T03:52:03+00:00",
-      "date": "2026-11-25",
+      "link": "https://www.bok.or.kr/portal/bbs/P0000093/view.do?nttId=11067096&menuNo=200789",
+      "published": "2026-11-26T13:00:00+09:00",
+      "date": "2026-11-26",
       "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
+      "source": "한국은행",
+      "category": "경제지표",
+      "region": "한국",
+      "indicator": "금리 결정",
+      "label": "경제지표 · 한국 금리 결정"
     },
     {
-      "title": "Op-ed: Trump’s Nvidia board intervention put a price on national security. Our adversaries will take note",
-      "title_ko": "기고문: 트럼프의 엔비디아 이사회 개입은 국가안보에 가격표를 붙였다, 적대국들은 이를 주목할 것이다",
+      "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+      "title_ko": "S&P, 엔비디아 경영·지배구조 위험 \"증가\"를 이유로 신용등급 강등 가능성 경고",
       "summary": [
-        "트럼프 대통령이 엔비디아 이사회에 젠슨 황을 CEO로 복귀시키라고 압박했다는 결정이 기사에서 다뤄진다.",
-        "기고문은 이 결정이 베이징, 테헤란, 모스크바가 보고 싶어 할 바로 그런 모습이라고 주장한다.",
-        "기고문은 이 개입이 국가안보에 가격을 매긴 것이며 적대국들이 이를 눈여겨볼 것이라는 입장을 취한다.",
+        "S&P글로벌레이팅스는 엔비디아의 신용등급이 한 단계 강등될 수 있다고 밝혔다.",
+        "S&P는 이 반도체 업체의 경영 및 지배구조 위험이 \"증가\"하고 있다고 지적했다.",
+        "이번 경고는 엔비디아의 경영·지배구조 위험을 문제 삼은 데 따른 것이다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/24/trump-nvidia-jensen-huang-national-security-china-chips.html",
-      "published": "2026-11-25T02:50:08+00:00",
-      "date": "2026-11-25",
-      "older": false,
-      "source": "지정학",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-      "title_ko": "젠슨 황의 엔비디아 CEO 복귀는 미중 AI 경쟁이 반도체만의 문제가 아님을 보여 준다",
-      "summary": [
-        "기사는 젠슨 황이 엔비디아 CEO로 복귀했다고 전한다.",
-        "이 복귀는 미중 인공지능 경쟁이 반도체에만 달린 것이 아님을 보여 준다고 한다.",
-        "기사는 이 경쟁에서 기술 인재도 중요한 요소라고 짚는다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-      "published": "2026-11-25T01:13:56+00:00",
-      "date": "2026-11-25",
+      "link": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+      "published": "2026-11-26T03:19:44+00:00",
+      "date": "2026-11-26",
       "older": false,
       "source": "AI·빅테크",
       "category": "AI 인프라",
@@ -233,18 +213,18 @@
       "label": "AI 인프라"
     },
     {
-      "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
-      "title_ko": "젠슨 황, 엔비디아에 후계 계획이 필요 없다고 직원들에게 말해",
+      "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
+      "title_ko": "\"당신의 자리가 기다리고 있어요\": 데니스, 엔비디아 CEO로 복귀한 젠슨 황을 환영하다",
       "summary": [
-        "소개문에 따르면 엔비디아 CEO 젠슨 황이 여러 건의 불륜이 보도된 뒤 사임했다.",
-        "보도된 불륜 가운데에는 중국 여성 사업가와의 관계가 포함돼 있다.",
-        "이 사업가는 중국 정부를 위한 스파이라는 의혹을 받고 있다.",
+        "데니스는 젠슨 황이 엔비디아 CEO로 복귀한 것을 계기로 그와의 오랜 인연을 다시 한번 확인했다.",
+        "데니스는 이 과정에서 기념 명판이 복원되었다는 사실을 공개했다.",
+        "제목에 따르면 데니스는 황에게 \"당신의 자리가 기다리고 있다\"는 메시지로 환영의 뜻을 전했다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
-      "published": "2026-11-24T23:13:49+00:00",
-      "date": "2026-11-25",
+      "link": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+      "published": "2026-11-26T03:13:43+00:00",
+      "date": "2026-11-26",
       "older": false,
       "source": "AI·빅테크",
       "category": "AI 인프라",
@@ -253,18 +233,18 @@
       "label": "AI 인프라"
     },
     {
-      "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
-      "title_ko": "델, AI 호조로 실적 예상 상회…250억 달러 자사주 매입 승인",
+      "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+      "title_ko": "스페이스X, 궤도 데이터센터 위성 100만 기 배치에 대해 FCC 승인 획득",
       "summary": [
-        "델의 3분기 전체 매출이 전년 동기 대비 두 배 넘게 늘었다.",
-        "매출 증가는 AI 서버 수요가 이끌었다.",
-        "회사는 250억 달러 규모의 자사주 매입을 승인했다.",
+        "스페이스X가 미국 연방통신위원회(FCC)로부터 궤도 데이터센터 위성 100만 기를 우주에 배치하는 계획을 승인받았다.",
+        "이 계획은 아마존과 다른 단체들의 반대를 받았다.",
+        "이번 승인은 궤도 데이터센터 용도의 위성 배치와 관련된 것이다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
-      "published": "2026-11-24T22:07:45+00:00",
-      "date": "2026-11-25",
+      "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "published": "2026-11-26T02:35:39+00:00",
+      "date": "2026-11-26",
       "older": false,
       "source": "AI·빅테크",
       "category": "AI 인프라",
@@ -273,24 +253,44 @@
       "label": "AI 인프라"
     },
     {
-      "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-      "title_ko": "민주당 중간선거 승리 이후 소비자신뢰 급등… 다만 인플레이션 우려는 여전",
+      "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
+      "title_ko": "시장이 위험을 가장 잘못 평가하고 있을 수 있는 곳: AI 붐, 변동성, 하이일드 채권",
       "summary": [
-        "콘퍼런스보드가 화요일 발표한 설문조사에서 전반적인 항목이 개선된 것으로 나타났다.",
-        "소비자신뢰지수 종합 지수는 103.3으로 뛰어올랐다.",
-        "기사 제목은 민주당의 중간선거 승리 이후 신뢰가 크게 오른 가운데에도 인플레이션 우려가 이어지고 있다고 전한다.",
+        "한 헤지펀드 매니저는 AI 붐이 경기 침체를 촉발할 수 있다고 말했다.",
+        "같은 매니저는 그럼에도 데이터센터가 여전히 매력적인 투자 기회로 남아 있다고 밝혔다.",
+        "기사 제목은 AI 붐, 변동성, 하이일드 채권을 시장이 위험을 잘못 평가할 수 있는 영역으로 꼽는다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-      "published": "2026-11-24T18:34:43+00:00",
-      "date": "2026-11-25",
+      "link": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
+      "published": "2026-11-26T01:34:58+00:00",
+      "date": "2026-11-26",
       "older": false,
-      "source": "경제·금리",
-      "category": "정치·정책",
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
       "region": null,
       "indicator": null,
-      "label": "정치·정책"
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Tech stocks sink but close well off the lows, Anthropic struggles to rebound above IPO price",
+      "title_ko": "기술주 급락했으나 저점에서는 크게 회복해 마감, 앤스로픽은 공모가 위로 반등하는 데 어려움",
+      "summary": [
+        "엔비디아를 비롯한 AI 관련 주식들이 하락했다.",
+        "투자자들은 AI 지출, 인플레이션, 금리 상승 위험을 함께 따져 보았다.",
+        "기술주는 하락했지만 장중 저점보다는 크게 높은 수준에서 마감했다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
+      "published": "2026-11-25T21:04:57+00:00",
+      "date": "2026-11-26",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
     }
   ]
 }
