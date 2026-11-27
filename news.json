@@ -1,10 +1,10 @@
 {
   "mode": "ai",
   "model": "claude-sonnet-5-5",
-  "updated_at": "2026-11-26T13:22:26.411611+09:00",
+  "updated_at": "2026-11-27T13:31:20.199794+09:00",
   "window": {
-    "from": "2026-11-25T08:00:00+09:00",
-    "description": "2026-11-25 08:00 이후"
+    "from": "2026-11-26T08:00:00+09:00",
+    "description": "2026-11-26 08:00 이후"
   },
   "indices": [
     {
@@ -12,11 +12,11 @@
       "source": "FRED",
       "code": "NASDAQCOM",
       "market": "US",
-      "date": "2026-11-24",
-      "close": 23733.54,
-      "prev_close": 24089.56,
-      "change_pct": -1.48,
-      "delayed": true
+      "date": "2026-11-25",
+      "close": 23585.8,
+      "prev_close": 23733.54,
+      "change_pct": -0.62,
+      "delayed": false
     },
     {
       "name": "S&P 500",
@@ -34,10 +34,10 @@
       "source": "ECOS",
       "code": "802Y001/0001000",
       "market": "KR",
-      "date": "2026-11-25",
-      "close": 4697.51,
-      "prev_close": 5006.03,
-      "change_pct": -6.16,
+      "date": "2026-11-26",
+      "close": 4711.21,
+      "prev_close": 4697.51,
+      "change_pct": 0.29,
       "delayed": false
     }
   ],
@@ -153,24 +153,124 @@
   },
   "items": [
     {
-      "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
-      "title_ko": "트럼프의 최근 관세 조치, 인도에 경쟁 아시아 수출국 대비 우위 안겨준다",
+      "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+      "title_ko": "쿠웨이트 드론 공격으로 이탈리아인 2명 사망, 트럼프 \"이란 전쟁은 내가 원할 때 끝난다\"",
       "summary": [
-        "방글라데시, 캄보디아, 태국에는 18%, 중국과 베트남에는 20%의 관세가 제안되었다.",
-        "이 관세안은 각국의 무역 협정에 따라 적용 여부가 달라질 수 있다.",
-        "이러한 관세 구도가 인도에 경쟁 면에서 유리한 입장을 제공한다는 것이 기사의 내용이다.",
+        "쿠웨이트에서 일어난 드론 공격으로 이탈리아인 두 명이 숨졌다.",
+        "트럼프는 이란과의 전쟁이 \"내가 원할 때\" 끝난다고 말했다.",
+        "이란 외무장관 아바스 아라그치는 이번 사건이 \"수상하며 미리 짜 놓은 전쟁의 각본처럼 보인다\"고 말했다.",
         "자세한 내용은 원문 확인 필요"
       ],
       "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
-      "published": "2026-11-26T04:12:18+00:00",
-      "date": "2026-11-26",
+      "link": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+      "published": "2026-11-27T03:30:23+00:00",
+      "date": "2026-11-27",
       "older": false,
       "source": "지정학",
       "category": "지정학",
       "region": null,
       "indicator": null,
       "label": "지정학"
+    },
+    {
+      "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
+      "title_ko": "중국 10월 산업이익 증가율, 5개월 만에 최고치인 20.1%로 급등",
+      "summary": [
+        "중국의 10월 산업이익 증가율이 20.1%로 5개월 만에 가장 높은 수준을 기록했다.",
+        "중국 경제는 AI 관련 제조업과 수출이 성장을 이끄는 한편 가계 소비는 부진한, 두 가지 속도로 움직이고 있다.",
+        "이러한 흐름 속에서 AI 관련 제조업과 수출이 성장의 동력 역할을 하고 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
+      "published": "2026-11-27T02:04:09+00:00",
+      "date": "2026-11-27",
+      "older": false,
+      "source": "경제·금리",
+      "category": "지정학",
+      "region": null,
+      "indicator": null,
+      "label": "지정학"
+    },
+    {
+      "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+      "title_ko": "엔비디아 칩 구매자들, GPU를 사려면 중국 임차인을 배제하라는 요구받아, 소식통 전언",
+      "summary": [
+        "미국 상무부 산업안보국(BIS)의 새 규정은 \"허점\"을 막으려는 취지였다고 제이미슨 그리어 미국 무역대표부(USTR) 대표가 밝혔다.",
+        "그리어 대표는 수요일 CNBC의 \"스쿼크 박스\"에 출연해 이 같은 입장을 전했다.",
+        "제목에 따르면 소식통들은 엔비디아 칩 구매자들이 GPU를 구매하려면 중국 임차인을 배제하라는 말을 들었다고 전했다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+      "published": "2026-11-26T17:04:54+00:00",
+      "date": "2026-11-27",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+      "title_ko": "구매자 주의? 엔비디아의 큰 변동성이 단일 종목 ETF의 위험을 드러내다",
+      "summary": [
+        "ETF Action 공동 창업 파트너 마이크 애킨스와 그래나이트셰어즈 CEO 윌 라인드가 등장한다.",
+        "두 사람은 엔비디아의 급격한 손실과 최근의 반등에 대해 각자 의견을 밝혔다.",
+        "기사 제목은 엔비디아의 변동성이 단일 종목 ETF의 위험을 드러냈다는 관점을 제시한다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+      "published": "2026-11-26T16:00:01+00:00",
+      "date": "2026-11-27",
+      "older": false,
+      "source": "시장·암호화폐·유동성",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
+    },
+    {
+      "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "title_ko": "미국의 관세 인상 위협, 무역 협정 체결을 압박하는 상대국들",
+      "summary": [
+        "미국은 14개 교역 상대국을 겨냥한 새로운 관세 조치를 계획했다.",
+        "미국은 일부 국가에는 워싱턴과 무역 협정을 맺으면 더 낮은 관세율을 적용하겠다고 제안했다.",
+        "관세 인상 위협이 교역 상대국들에 무역 협정 체결 압박을 더하고 있다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+      "published": "2026-11-26T12:46:55+00:00",
+      "date": "2026-11-26",
+      "older": false,
+      "source": "경제·금리",
+      "category": "지정학",
+      "region": null,
+      "indicator": null,
+      "label": "지정학"
+    },
+    {
+      "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
+      "title_ko": "글로벌 증시, 투자자들이 미국 관세와 AI 우려를 떨치고 '저가 매수'에 나서며 반등",
+      "summary": [
+        "투자자들은 수요일 백악관이 발표한 새로운 관세 조치를 대수롭지 않게 받아들인 것으로 보인다.",
+        "이번 관세는 주요 교역 상대국 12곳 이상을 겨냥한 것이다.",
+        "제목에 따르면 글로벌 증시는 관세와 AI 관련 불안 속에서도 반등했다.",
+        "자세한 내용은 원문 확인 필요"
+      ],
+      "ai_summary": true,
+      "link": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+      "published": "2026-11-26T12:22:25+00:00",
+      "date": "2026-11-26",
+      "older": false,
+      "source": "AI·빅테크",
+      "category": "AI 인프라",
+      "region": null,
+      "indicator": null,
+      "label": "AI 인프라"
     },
     {
       "title": "2026년도 의안 제36호 - 통화정책방향",
@@ -191,106 +291,6 @@
       "region": "한국",
       "indicator": "금리 결정",
       "label": "경제지표 · 한국 금리 결정"
-    },
-    {
-      "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-      "title_ko": "S&P, 엔비디아 경영·지배구조 위험 \"증가\"를 이유로 신용등급 강등 가능성 경고",
-      "summary": [
-        "S&P글로벌레이팅스는 엔비디아의 신용등급이 한 단계 강등될 수 있다고 밝혔다.",
-        "S&P는 이 반도체 업체의 경영 및 지배구조 위험이 \"증가\"하고 있다고 지적했다.",
-        "이번 경고는 엔비디아의 경영·지배구조 위험을 문제 삼은 데 따른 것이다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-      "published": "2026-11-26T03:19:44+00:00",
-      "date": "2026-11-26",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
-      "title_ko": "\"당신의 자리가 기다리고 있어요\": 데니스, 엔비디아 CEO로 복귀한 젠슨 황을 환영하다",
-      "summary": [
-        "데니스는 젠슨 황이 엔비디아 CEO로 복귀한 것을 계기로 그와의 오랜 인연을 다시 한번 확인했다.",
-        "데니스는 이 과정에서 기념 명판이 복원되었다는 사실을 공개했다.",
-        "제목에 따르면 데니스는 황에게 \"당신의 자리가 기다리고 있다\"는 메시지로 환영의 뜻을 전했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-      "published": "2026-11-26T03:13:43+00:00",
-      "date": "2026-11-26",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-      "title_ko": "스페이스X, 궤도 데이터센터 위성 100만 기 배치에 대해 FCC 승인 획득",
-      "summary": [
-        "스페이스X가 미국 연방통신위원회(FCC)로부터 궤도 데이터센터 위성 100만 기를 우주에 배치하는 계획을 승인받았다.",
-        "이 계획은 아마존과 다른 단체들의 반대를 받았다.",
-        "이번 승인은 궤도 데이터센터 용도의 위성 배치와 관련된 것이다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-      "published": "2026-11-26T02:35:39+00:00",
-      "date": "2026-11-26",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
-      "title_ko": "시장이 위험을 가장 잘못 평가하고 있을 수 있는 곳: AI 붐, 변동성, 하이일드 채권",
-      "summary": [
-        "한 헤지펀드 매니저는 AI 붐이 경기 침체를 촉발할 수 있다고 말했다.",
-        "같은 매니저는 그럼에도 데이터센터가 여전히 매력적인 투자 기회로 남아 있다고 밝혔다.",
-        "기사 제목은 AI 붐, 변동성, 하이일드 채권을 시장이 위험을 잘못 평가할 수 있는 영역으로 꼽는다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-      "published": "2026-11-26T01:34:58+00:00",
-      "date": "2026-11-26",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
-    },
-    {
-      "title": "Tech stocks sink but close well off the lows, Anthropic struggles to rebound above IPO price",
-      "title_ko": "기술주 급락했으나 저점에서는 크게 회복해 마감, 앤스로픽은 공모가 위로 반등하는 데 어려움",
-      "summary": [
-        "엔비디아를 비롯한 AI 관련 주식들이 하락했다.",
-        "투자자들은 AI 지출, 인플레이션, 금리 상승 위험을 함께 따져 보았다.",
-        "기술주는 하락했지만 장중 저점보다는 크게 높은 수준에서 마감했다.",
-        "자세한 내용은 원문 확인 필요"
-      ],
-      "ai_summary": true,
-      "link": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
-      "published": "2026-11-25T21:04:57+00:00",
-      "date": "2026-11-26",
-      "older": false,
-      "source": "AI·빅테크",
-      "category": "AI 인프라",
-      "region": null,
-      "indicator": null,
-      "label": "AI 인프라"
     }
   ]
 }
